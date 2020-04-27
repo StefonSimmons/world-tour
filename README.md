@@ -1,11 +1,10 @@
-![](https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
+https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif
 
-## World Tour
+# World Tour
 Data-driven regional statistics app for the world
 
 ### Description
 "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
-<br>
 
 ### Wireframes
 
@@ -19,7 +18,6 @@ Tablet & Desktop View (via whimsical.com)
 Mobile View (via whimsical.com)
 
 - https://whimsical.com/Q3mpp9nnWd3sYnECgM1E2k
-<br>
 
 ### MVP
 
@@ -28,14 +26,12 @@ Mobile View (via whimsical.com)
 - Accessible regional detail page
 - Accessible country detail pages via randomly generated result and via the regional detail page.
 - GET API data on total statistics from all countries ('world data' -Home pg), total stats per region ('region details' -region pg.), and country stats (-country pg.).
-<br>
 
 ### Post MVP
 
 - Add search-bar/functionality to the region details page so user can search for countries
 - Create a JSON file with country and region descriptions and images to be passed into the app for more robust learning experience
 - Add a map widget to country and region details page
-<br>
 
 ### Supporting Libraries
 
@@ -43,7 +39,6 @@ Mobile View (via whimsical.com)
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   | Used to navigate through pages in the app  |
-<br>
 
 ### REST Countries API 
 
@@ -129,12 +124,10 @@ API SNIPPET
     }
 ]
 ```
-<br>
 
 ### Component Hierarchy
 
 - (via whimsical) https://whimsical.com/7rNjWCZaadmmdsGFpA94FS
-<br>
 
 ### Component Breakdown
 
@@ -151,7 +144,6 @@ API SNIPPET
 |  Region pg.  | class      |   y   |   y   | Dynamic pg. showing different regions ex.("/region/Americas")   |
 | Countries pg.| class      |   y   |   y   | Dynamic pg. showing different countries ex.("/country/Canada")  |
 
-<br>
 
 ### Component Time Estimates
 
@@ -172,7 +164,6 @@ API SNIPPET
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
 | Styling             |    L     |     6 hrs      |        -      |      -      |
 | TOTAL               |    --    |    44 hrs      |        -      |     TBD     |
-<br>
 
 ### Helper Functions
 
@@ -181,7 +172,6 @@ API SNIPPET
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
 | - | - |
-<br>
 
 ### SWOT Analysis
 
@@ -200,7 +190,6 @@ API SNIPPET
 
 #### Threats:
 - Passing Props from Regional to Country Details
-<br>
 
 ## Code Showcase
 
