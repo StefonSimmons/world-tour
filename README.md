@@ -1,8 +1,10 @@
 ![](https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
 
-# World Tour
+## World Tour
+Data-driven regional statistics app for the world
 
-### "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
+### Description
+"World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
 <br>
 
 ### Wireframes
