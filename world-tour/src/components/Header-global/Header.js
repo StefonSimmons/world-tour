@@ -11,23 +11,26 @@ function Header() {
         <nav >
           <ul className="app-nav">
             <li>
-              <Link to='/'>
+              <Link to='/' className="nav-link">
                   Home
               </Link>
             </li>
             <li>
-              <Link to='/about'>
+              <Link to='/about' className="nav-link">
                   About
               </Link>
             </li>
             <li>
-              <Link to='/contact'> 
+              <Link to='/contact' className="nav-link"> 
                   Contact
               </Link>
             </li>
           </ul>
         </nav>
-        <img src={earth} className="earth-logo" alt="logo" />
+        <Link to='/explorer'>
+          <img src={earth} className="earth-logo" alt="logo" />
+        </Link>
+        
       </header>
     </div>
   )
