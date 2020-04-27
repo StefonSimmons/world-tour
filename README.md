@@ -1,11 +1,10 @@
-![](https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
+https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif
 
 # World Tour
 
 ## Description
 
 > "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
-
 <br>
 
 ### Wireframes
@@ -15,12 +14,11 @@
 
 Tablet & Desktop View (via whimsical.com)
 
-- ![](https://whimsical.com/CC4ydoTbrLM2gbxUnfUBfR
+- https://whimsical.com/CC4ydoTbrLM2gbxUnfUBfR
 
 Mobile View (via whimsical.com)
 
-- ![](uhttps://whimsical.com/Q3mpp9nnWd3sYnECgM1E2k)
-
+- https://whimsical.com/Q3mpp9nnWd3sYnECgM1E2k
 <br>
 
 ### MVP
@@ -45,8 +43,6 @@ Mobile View (via whimsical.com)
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   | Used to navigate through pages in the app  |
-
-
 <br>
 
 ### REST Countries API 
@@ -55,7 +51,7 @@ Mobile View (via whimsical.com)
 
 |Quality Docs? | Website                        | Query                                             |
 |:-----------: | :----------------------------: | :------------------------------------------------:|
-|     yes      | ![](https://restcountries.eu/) | ![](https://restcountries.eu/rest/v2/name/hong%20kong) |
+|     yes      | https://restcountries.eu/)     | https://restcountries.eu/rest/v2/name/hong%20kong |
 
 API SNIPPET
 
@@ -133,16 +129,11 @@ API SNIPPET
     }
 ]
 ```
-
-
 <br>
 
 ### Component Hierarchy
 
-
-- (via whimsical):![]https://whimsical.com/7rNjWCZaadmmdsGFpA94FS)
-
-
+- https://whimsical.com/7rNjWCZaadmmdsGFpA94FS
 <br>
 
 ### Component Breakdown
@@ -151,14 +142,14 @@ API SNIPPET
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|     App      | class      |   y   |   n   | _Holds all the Routes also hols the api call                     |
-|  Header/Nav  | functional |   n   |   n   | _Links to the Home, About, Contact, and 'Explorer' Components    |
-|     Home     | functional |   n   |   y   | _takes total sum data from API for all countries                 |
-|     About    | functional |   n   |   n   | _Static page with overview of the app                            |
-|    Contact   | functional |   n   |   n   | _Static page with contact information (i.e. email, github)       |
-| Explorer pg. | functional |   n   |   y   | _Static page of mapped regions                                   |
-|  Region pg.  | class      |   y   |   y   | _Dynamic pg. showing different regions ex.("/region/Americas")   |
-| Countries pg.| class      |   y   |   y   | _Dynamic pg. showing different countries ex.("/country/Canada")  |
+|     App      | class      |   y   |   n   | Holds all the Routes also hols the api call                     |
+|  Header/Nav  | functional |   n   |   n   | Links to the Home, About, Contact, and 'Explorer' Components    |
+|     Home     | functional |   n   |   y   | takes total sum data from API for all countries                 |
+|     About    | functional |   n   |   n   | Static page with overview of the app                            |
+|    Contact   | functional |   n   |   n   | Static page with contact information (i.e. email, github)       |
+| Explorer pg. | functional |   n   |   y   | Static page of mapped regions                                   |
+|  Region pg.  | class      |   y   |   y   | Dynamic pg. showing different regions ex.("/region/Americas")   |
+| Countries pg.| class      |   y   |   y   | Dynamic pg. showing different countries ex.("/country/Canada")  |
 
 <br>
 
@@ -180,8 +171,7 @@ API SNIPPET
 | Countries pg.       |    H     |     6 hrs      |        -      |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
 | Styling             |    L     |     6 hrs      |        -      |      -      |
-| TOTAL               |    --    |    41 hrs      |        -      |     TBD     |
-
+| TOTAL               |    --    |    44 hrs      |        -      |     TBD     |
 <br>
 
 ### Helper Functions
@@ -190,13 +180,12 @@ API SNIPPET
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
-
+| - | - |
 <br>
 
 ### SWOT Analysis
 
-#### Stregths:
+#### Strengths:
 - CSS
 - JSX
 - high-order functions
@@ -206,19 +195,18 @@ API SNIPPET
 
 #### Opportunites:
 - Able to chalenge myself on logistics
+- Using Testing or Storybook
+- Able to create a dynamic component-based app in React
 
 #### Threats:
 - Passing Props from Regional to Country Details
-
 <br>
 
-## Project Delivery
-
-### Code Showcase
+## Code Showcase
 
 > Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
-### Code Issues & Resolutions
+## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
 
