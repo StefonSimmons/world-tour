@@ -1,10 +1,8 @@
-https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif
+![](https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif)
 
 # World Tour
 
-## Description
-
-> "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
+### "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
 <br>
 
 ### Wireframes
@@ -51,7 +49,7 @@ Mobile View (via whimsical.com)
 
 |Quality Docs? | Website                        | Query                                             |
 |:-----------: | :----------------------------: | :------------------------------------------------:|
-|     yes      | https://restcountries.eu/)     | https://restcountries.eu/rest/v2/name/hong%20kong |
+|     yes      | https://restcountries.eu/      | https://restcountries.eu/rest/v2/name/hong%20kong |
 
 API SNIPPET
 
@@ -133,7 +131,7 @@ API SNIPPET
 
 ### Component Hierarchy
 
-- https://whimsical.com/7rNjWCZaadmmdsGFpA94FS
+- (via whimsical) https://whimsical.com/7rNjWCZaadmmdsGFpA94FS
 <br>
 
 ### Component Breakdown
@@ -153,7 +151,7 @@ API SNIPPET
 
 <br>
 
-#### Component Time Estimates
+### Component Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above. 
 >
@@ -194,7 +192,7 @@ API SNIPPET
 - Testing or Storybook
 
 #### Opportunites:
-- Able to chalenge myself on logistics
+- Able to challenge myself on logistics
 - Using Testing or Storybook
 - Able to create a dynamic component-based app in React
 
