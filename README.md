@@ -153,17 +153,18 @@ API SNIPPET
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| App / Calling API   |    H     |     5 hrs      |        -      |      -      |
-| Header/Nav          |    H     |     4 hrs      |        -      |      -      |
-| Home                |    L     |     4 hrs      |        -      |      -      |
-| About               |    L     |     2 hrs      |        -      |      -      |
-| Contact             |    L     |     2 hrs      |        -      |      -      |
-| Explorer pg.        |    H     |     6 hrs      |        -      |      -      |
-| Region pg.          |    M     |     6 hrs      |        -      |      -      |
-| Countries pg.       |    H     |     6 hrs      |        -      |      -      |
+| Installing          |    H     |     15 mins    |      30 mins  |      -      |
+| App.js / Calling API|    H     |     5 hrs      |        -      |      -      |
+| Header/Nav          |    H     |     4 hrs      |      2 hrs    |      -      |
+| Home                |    L     |     4 hrs      |      10 mins  |      -      |
+| About               |    L     |     2 hrs      |      10 mins  |      -      |
+| Contact             |    L     |     2 hrs      |      10 mins  |      -      |
+| Explorer pg.        |    H     |     6 hrs      |      20 mins  |      -      |
+| Region pg.          |    M     |     6 hrs      |      20 mins  |      -      |
+| Countries pg.       |    H     |     6 hrs      |      20 mins  |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
 | Styling             |    L     |     6 hrs      |        -      |      -      |
-| TOTAL               |    --    |    44 hrs      |        -      |     TBD     |
+| TOTAL               |    --    |    44 hrs      |      4 hrs    |     TBD     |
 
 ### Helper Functions
 
