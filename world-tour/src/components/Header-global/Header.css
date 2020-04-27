@@ -1,0 +1,41 @@
+
+/* Earth logo ⬇ */
+
+.earth-logo {
+  position: absolute;
+  height: 30vmin;
+  top: 20px;
+  right: 40%;
+  cursor: pointer;
+  animation: earth-logo-spin infinite 20s linear;
+}
+
+@keyframes earth-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Earth logo ⬆ */
+
+.app-header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #282c34;
+  position: relative;
+}
+
+li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 15px;
+}
+a{
+  color: white;
+  text-decoration: none
+}
+
+
