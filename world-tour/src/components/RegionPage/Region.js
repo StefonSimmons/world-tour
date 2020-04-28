@@ -26,7 +26,7 @@ function Region() {
         <hr />
         {/* Need to setup a map loop for regions here*/}
         <div>
-          <Link to='/country'>
+          <Link to='/country/:alpha3code'>
             Botwana
           </Link>
         </div>

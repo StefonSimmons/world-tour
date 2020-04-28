@@ -43,7 +43,7 @@ function App() {
 
   function listRegions() {
     const uniqueRegions = []
-    regions.map((r, id) => {
+    regions.forEach((r) => {
       if (uniqueRegions.includes(r.region) === false) {
         uniqueRegions.push(r.region)
       }
@@ -51,14 +51,22 @@ function App() {
     return uniqueRegions
   }
 
+  function listCountries() {
+    const countries = regions.map((r, id) => 
+      r.name
+    )
+    return countries
+  }
 
   return (
     <div className="App">
       <Header />
       {/* {console.log(totalArea())}
       {console.log(totalPopulation())}
-      {console.log(regions[1])} */}
-      {console.log(listRegions())}
+      {console.log(regions[1])}
+      {console.log(listRegions())} */}
+      {/* {console.log(listCountries())} */}
+      
       <Switch>
 
         <Route path="/" exact>
@@ -78,14 +86,15 @@ function App() {
 
         <Route path="/explorer" exact>
             <Explorer
-              uniqueRegions= {listRegions()}
+              uniqueRegions={listRegions()}
+              countries={listCountries()}
             />
         </Route>
 
         <Route path="/region/:alphacode3">
           <Region />
         </Route>
-        <Route path="/country">
+        <Route path="/country/:alpha3code">
           <Country />
         </Route>
 
