@@ -136,7 +136,7 @@ API SNIPPET
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |     App      | class      |   y   |   n   | Holds all the Routes also hols the api call                     |
-|  Header/Nav  | functional |   n   |   n   | Links to the Home, About, Contact, and 'Explorer' Components    |
+|  Header/Nav  | functional |   y   |   n   | Links to the Home, About, Contact, and 'Explorer' Components    |
 |     Home     | functional |   n   |   y   | takes total sum data from API for all countries                 |
 |     About    | functional |   n   |   n   | Static page with overview of the app                            |
 |    Contact   | functional |   n   |   n   | Static page with contact information (i.e. email, github)       |
@@ -199,6 +199,10 @@ API SNIPPET
 ## Code Issues & Resolutions
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
+
+## Change Log
+
+Header is stately due to the hamburger menu functionality
 
 
 

@@ -5,7 +5,7 @@
   position: absolute;
   height: 30vmin;
   top: 20px;
-  right: 40%;
+  right: 42vw;
   cursor: pointer;
   animation: earth-logo-spin infinite 20s linear;
 }
@@ -36,10 +36,13 @@ ul li:nth-child(n+3){
   border-left: solid 1px grey
 }
 .menu-item{
+  display: inline block;
   color: white;
   text-decoration: none;
+  text-align: center;
   margin: 25px
 }
+
 nav{
   height: 80px;
 }
@@ -49,10 +52,13 @@ nav{
 }
 
 @media(max-width: 861px){
-  .menu-item, .menu-item-container{
-    display: none
+  .menu-item-container{
+    display: none; 
+    background-color: #282c34;
   }
-  
+  .menu-item{
+    margin: 25px 15px;
+  }
   #hamburger{
     display: inline-block;
     width: 40px;
