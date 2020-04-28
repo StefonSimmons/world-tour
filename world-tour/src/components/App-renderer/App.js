@@ -78,7 +78,7 @@ function App() {
 
         <Route path="/explorer" exact>
             <Explorer
-              region= {listRegions()}
+              uniqueRegions= {listRegions()}
             />
         </Route>
 
