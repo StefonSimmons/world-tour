@@ -2,20 +2,14 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import earth from '../../images/Emblem-earth.svg'
 import hamburger from '../../images/hamburger.png'
-
 import './Header.css'
+// import styled from 'styled-components'
+
+
 
 function Header() {
 
   const [open, updateOpen] = useState(false) 
-
-  // const handleMenu = () => {
-  //   const mq = window.matchMedia("(max-width: 861px)");
-  //   if (mq.matches) {
-  //     updateOpen(!open)
-  //     // open ? {display: "none"}: display:
-  //   }
-  // }
 
 
   return (

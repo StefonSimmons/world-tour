@@ -1,6 +1,5 @@
-import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios'
 import Header from '../Header-global/Header'
 import Home from '../HomePage/Home'
 import About from '../AboutPage/About'
@@ -10,14 +9,32 @@ import Region from '../RegionPage/Region'
 import Country from '../CountryPage/Country'
 import {Route, Switch} from 'react-router-dom'
 
+  
 function App() {
+
+  const [regions, updateRegions] = useState([])
+  
+  useEffect(() => {
+    const apiCall = async () => {
+      const results = await axios("https://restcountries.eu/rest/v2/all")
+      updateRegions(results.data)
+    }
+    apiCall()
+  }, [])
+  
+  // const totalArea= regions.name.reduce()
+
   return (
     <div className="App">
       <Header />
-
+      {/* {console.log(totalArea)} */}
+      {console.log(regions[1])}
       <Switch>
         <Route path="/" exact>
-          <Home />
+            <Home
+              totalCountries={regions.length}
+              // totalArea={totalArea}
+            />
         </Route>
         <Route path="/about" exact>
           <About />

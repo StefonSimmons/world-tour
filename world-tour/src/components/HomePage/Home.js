@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Home() {
+function Home({totalCountries}) {
   return (
     <div>
       <h1>Welcome, 3rd-Star Explorer</h1>
@@ -9,7 +9,7 @@ function Home() {
       <h2>Area of Land (mi<sup>2</sup>)</h2>
       <p>4234893</p>
       <h2>Recorded Designated Regions:</h2>
-      <p>2677</p>
+      <p>{totalCountries}</p>
 
     </div>
   )
