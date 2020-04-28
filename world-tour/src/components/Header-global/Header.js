@@ -45,9 +45,11 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <Link to='/explorer'>
-          <img src={earth} className="earth-logo" alt="logo" />
-        </Link>
+        <div>
+          <Link to='/explorer'>
+            <img src={earth} className="earth-logo" alt="logo" />
+          </Link>
+        </div>
         
       </header>
     </div>

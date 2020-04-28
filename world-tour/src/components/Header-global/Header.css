@@ -5,9 +5,12 @@
   position: absolute;
   height: 30vmin;
   top: 20px;
-  right: 42vw;
+  right: 44vw;
   cursor: pointer;
-  animation: earth-logo-spin infinite 20s linear;
+  animation: earth-logo-spin infinite 50s linear;
+}
+.earth-logo:hover{
+  height: 30.5vmin
 }
 
 @keyframes earth-logo-spin {
@@ -63,6 +66,9 @@ nav{
     display: inline-block;
     width: 40px;
     padding: 6px 40px
+  }
+  .earth-logo{
+    right: 35vw;
   }
 }
 

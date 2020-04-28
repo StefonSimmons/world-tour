@@ -155,7 +155,7 @@ API SNIPPET
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Installing          |    H     |     15 mins    |      30 mins  |      -      |
 | App.js / Calling API|    H     |     5 hrs      |        -      |      -      |
-| Header/Nav          |    H     |     4 hrs      |      2 hrs    |      -      |
+| Header/Nav          |    H     |     4 hrs      |      8 hrs    |      -      |
 | Home                |    L     |     4 hrs      |      10 mins  |      -      |
 | About               |    L     |     2 hrs      |      10 mins  |      -      |
 | Contact             |    L     |     2 hrs      |      10 mins  |      -      |
@@ -164,7 +164,7 @@ API SNIPPET
 | Countries pg.       |    H     |     6 hrs      |      20 mins  |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
 | Styling             |    L     |     6 hrs      |        -      |      -      |
-| TOTAL               |    --    |    44 hrs      |      4 hrs    |     TBD     |
+| TOTAL               |    --    |    44 hrs      |      10 hrs    |     TBD     |
 
 ### Helper Functions
 
