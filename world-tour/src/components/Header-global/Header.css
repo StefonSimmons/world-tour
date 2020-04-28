@@ -5,7 +5,7 @@
   position: absolute;
   height: 30vmin;
   top: 20px;
-  right: 44vw;
+  right: 41.5vw;
   cursor: pointer;
   animation: earth-logo-spin infinite 50s linear;
 }
