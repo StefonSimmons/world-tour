@@ -22,18 +22,38 @@ function App() {
     apiCall()
   }, [])
   
-  // const totalArea= regions.name.reduce()
+  function totalArea(){
+    let areaArray = regions.map(r => r.area)
+    let sumAreas = areaArray.reduce((sum, curr) => {
+      return sum + curr
+    }, 0)
+    // converts from square kilometer to square miles
+    let convertArea = (sumAreas * 0.386102).toFixed(2)
+    return convertArea
+  }
+  
+  function totalPopulation(){
+    let populationArray = regions.map(r => r.population)
+    let sumPopulation = populationArray.reduce((sum, curr) => {
+      return sum + curr
+    }, 0)
+    return sumPopulation
+  }
+
+
 
   return (
     <div className="App">
       <Header />
-      {/* {console.log(totalArea)} */}
+      {console.log(totalArea())}
+      {console.log(totalPopulation())}
       {console.log(regions[1])}
       <Switch>
         <Route path="/" exact>
             <Home
               totalCountries={regions.length}
-              // totalArea={totalArea}
+              totalArea={totalArea()}
+              totalPopulation={totalPopulation()}
             />
         </Route>
         <Route path="/about" exact>
