@@ -1,4 +1,4 @@
-
+/* @import url('') */
 /* Earth logo ⬇ */
 
 .earth-logo {
@@ -27,15 +27,36 @@
   background-color: #282c34;
   position: relative;
 }
-
 li{
   display: inline-block;
   list-style-type: none;
   padding: 15px;
 }
-.nav-link{
+ul li:nth-child(n+3){
+  border-left: solid 1px grey
+}
+.menu-item{
   color: white;
-  text-decoration: none
+  text-decoration: none;
+  margin: 25px
+}
+nav{
+  height: 80px;
 }
 
+#hamburger{
+  display: none;
+}
+
+@media(max-width: 861px){
+  .menu-item, .menu-item-container{
+    display: none
+  }
+  
+  #hamburger{
+    display: inline-block;
+    width: 40px;
+    padding: 6px 40px
+  }
+}
 
