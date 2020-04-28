@@ -1,28 +1,45 @@
 import React from 'react'
-import '../HomePage/Home.css'
+import styled from 'styled-components'
 
+const Main = styled.main`
+  justify-content: center;
+  text-align: center;
+  margin: 250px 0
+`
+const Welcome = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px
+`
+const Titles = styled.h2`
+font-family: 'Manrope', sans-serif;
+font-size: 36px
+`
+const Numbers = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  letter-spacing: 15px
 
-
+`
 
 function Home({totalCountries, totalArea, totalPopulation}) {
   return (
-    <div>
+    <>
 
-      <main>
+      <Main>
         <section>
-          <h1>Welcome, 3rd-Star Explorer</h1>
+          <Welcome>Welcome Home, 3rd-Star Explorer</Welcome>
 
-          <h2>The population on Earth:</h2>
-          <p>{totalPopulation}</p>
+          <Titles>Population on Earth:</Titles>
+          <Numbers>{totalPopulation}</Numbers>
 
-          <h2>Area of Land (mi<sup>2</sup>)</h2>
-          <p>{totalArea}</p>
+          <Titles>Area of Land (mi<sup>2</sup>)</Titles>
+          <Numbers>{totalArea}</Numbers>
 
-          <h2>Recorded Designated Regions:</h2>
-          <p>{totalCountries}</p>
+          <Titles>Recorded Designated Regions:</Titles>
+          <Numbers>{totalCountries}</Numbers>
         </section>
-      </main>
-    </div>
+      </Main>
+    </>
   )
 }
 

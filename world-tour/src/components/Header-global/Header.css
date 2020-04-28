@@ -1,41 +1,54 @@
 /* @import url('') */
 /* Earth logo ⬇ */
 
-.earth-logo {
+/* .earth-logo {
   position: absolute;
   height: 30vmin;
   top: 20px;
   right: 41.5vw;
   cursor: pointer;
   animation: earth-logo-spin infinite 50s linear;
-}
-.earth-logo:hover{
+} */
+/* .earth-logo:hover{
   height: 30.5vmin
-}
+} */
 
-@keyframes earth-logo-spin {
+/* @keyframes earth-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Earth logo ⬆ */
 
-.app-header {
+/* .app-header {
   display: flex;
   justify-content: flex-end;
   background-color: #282c34;
   position: relative;
-}
-li{
+} */
+/* nav{
+  height: 80px;
+} */
+
+/* #hamburger{
+  display: none;
+} */
+
+
+
+/* Remaining CSS to be applied as Styled Components */
+
+
+.menu-item-container{ 
   display: inline-block;
   list-style-type: none;
   padding: 15px;
 }
-ul li:nth-child(n+3){
+ul li:nth-child(n+2){
   border-left: solid 1px grey
 }
 .menu-item{
@@ -46,19 +59,14 @@ ul li:nth-child(n+3){
   margin: 25px
 }
 
-nav{
-  height: 80px;
-}
-
-#hamburger{
-  display: none;
-}
-
 @media(max-width: 861px){
   .menu-item-container{
     display: none; 
     background-color: #282c34;
   }
+}
+
+@media(max-width: 861px){
   .menu-item{
     margin: 25px 15px;
   }
@@ -71,4 +79,8 @@ nav{
     right: 35vw;
   }
 }
-
+@media(max-width: 800px){
+  .earth-logo{
+    right: 30vw;
+  }
+}

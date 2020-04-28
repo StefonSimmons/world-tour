@@ -1,0 +1,34 @@
+.Africa{
+  background-image: url("../../images/Africa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Europe{
+  background-image: url("../../images/Europe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Americas{
+  background-image: url("../../images/Americas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: blue
+}
+
+.Asia{
+  background-image: url("../../images/Asia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Oceania{
+  background-image: url("../../images/Oceania.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.Polar{
+  background-image: url("../../images/Polar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
