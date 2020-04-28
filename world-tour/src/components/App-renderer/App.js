@@ -14,6 +14,7 @@ function App() {
 
   const [regions, updateRegions] = useState([])
   
+
   useEffect(() => {
     const apiCall = async () => {
       const results = await axios("https://restcountries.eu/rest/v2/all")
@@ -40,15 +41,26 @@ function App() {
     return sumPopulation
   }
 
+  function listRegions() {
+    const uniqueRegions = []
+    regions.map((r, id) => {
+      if (uniqueRegions.includes(r.region) === false) {
+        uniqueRegions.push(r.region)
+      }
+    })
+    return uniqueRegions
+  }
 
 
   return (
     <div className="App">
       <Header />
-      {console.log(totalArea())}
+      {/* {console.log(totalArea())}
       {console.log(totalPopulation())}
-      {console.log(regions[1])}
+      {console.log(regions[1])} */}
+      {console.log(listRegions())}
       <Switch>
+
         <Route path="/" exact>
             <Home
               totalCountries={regions.length}
@@ -56,15 +68,20 @@ function App() {
               totalPopulation={totalPopulation()}
             />
         </Route>
+
         <Route path="/about" exact>
           <About />
         </Route>
         <Route path="/contact" exact>
           <Contact />
         </Route>
+
         <Route path="/explorer" exact>
-          <Explorer />
+            <Explorer
+              region= {listRegions()}
+            />
         </Route>
+
         <Route path="/region/:alphacode3">
           <Region />
         </Route>

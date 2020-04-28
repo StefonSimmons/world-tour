@@ -18,10 +18,10 @@ function Header() {
       <header className="app-header">
         <nav>
           <ul>
-            {/* <li id= "hamburger-container"> */}
+            {/* <li id= "hamburger-container"> DONT NEED*/}
             <img id="hamburger" src={hamburger} alt="hamburger menu" onClick={(e) => updateOpen(!open)}/>
-            {console.log(open)}
-            {/* </li> */}
+            {/* {console.log(open)} */}
+            {/* </li> DONT NEED*/}
             <li className= "menu-item-container" style={open ? { display:"block" }: {display:""}}>
               <Link to='/' className="menu-item" style={open ? { display:"block" }: {display:""}}>
                   Home
