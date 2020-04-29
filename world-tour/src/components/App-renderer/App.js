@@ -98,8 +98,10 @@ function App() {
           />
         </Route>
 
-        <Route path="/country/:alpha3code">
-          <Country />
+        <Route path='/country/:countryName'>
+          <Country
+            regions= {regions}
+          />
         </Route>
 
       </Switch>

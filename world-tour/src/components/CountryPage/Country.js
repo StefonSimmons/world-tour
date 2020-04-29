@@ -1,44 +1,73 @@
 import React from 'react'
-import logo from '../../images/hamburger.png'
+import {useParams} from 'react-router-dom'
+import CountUp from 'react-countup'
+import styled from 'styled-components'
 
-function Country() {
+const Main = styled.main`
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 125px 0;
+  padding: 0 0 0 0px;
+`
+
+
+function Country({regions}) {
+
+  
+  const {countryName} = useParams()
+  let countryData = regions.filter(r => r.name === countryName)
+  let country = countryData[0]
+
+
   return (
     <div>
-      <main>
-        <h1>name of Country clicked</h1>
-        <i>native name</i>
+        {console.log('in rtrn before native',country)}
+      <Main>
+        <h1>{countryName}</h1>
+        <i>{country.nativeName}</i>
         <hr/>
         <table>
           <tbody>
             <tr>
-              <td>Population in *name here*</td>
-              <td>########</td>
+              <td>{`Population in ${countryName}:`}</td>
+              <td>
+                <CountUp
+                  end={country.population}
+                  separator=','
+                />
+              </td>
             </tr>
             <tr>
-              <td>Area of Land (mi<sup>2</sup>)</td>
-              <td>#####</td>
+              <td>Area of Land (mi<sup>2</sup>):</td>
+              <td>
+                <CountUp
+                  end={country.area}
+                  separator=','
+                />
+              </td>
             </tr>
             <tr>
-              <td>Capital</td>
-              <td>Gaborone</td>
+              <td>Capital:</td>
+              <td>{country.capital}</td>
             </tr>
             <tr>
-              <td>Currency</td>
-              <td>name and symbol</td>
+              <td>Currency (Symbol):</td>
+              <td>{country.currencies[0].code} ({country.currencies[0].symbol})</td>
             </tr>
             <tr>
-              <td>Region</td>
-              <td>Africa</td>
+              <td>Region:</td>
+              <td>{country.region}</td>
             </tr>
             <tr>
-              <td>Sub Region</td>
-              <td>Gaborone</td>
+              <td>Sub Region:</td>
+              <td>{country.subregion}</td>
             </tr>
           </tbody>
         </table>
         <hr />
-        <img src={logo} alt="flagname"/>
-      </main>
+        <img src={country.flag} alt={countryName}/>
+      </Main>
     </div>
   )
 }

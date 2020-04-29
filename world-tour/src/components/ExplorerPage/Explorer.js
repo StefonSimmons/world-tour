@@ -88,7 +88,7 @@ function Explorer({ uniqueRegions, countries }) {
           <RandoBtn onClick= {(e) => handleRandomBtn()}>Visit a Random Country</RandoBtn>
           
           <RandoBox>
-            <CountryLink to='/country/:alpha3code'>
+            <CountryLink to={`/country/${randoCountry}`}>
               <RandoCountry>{randoCountry}</RandoCountry>
             </CountryLink>
           </RandoBox>
