@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import CountUp from 'react-countup'
 
 const Main = styled.main`
   justify-content: center;
@@ -11,15 +12,17 @@ const Welcome = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-size: 48px
 `
-const Titles = styled.h2`
+const Header = styled.h2`
 font-family: 'Manrope', sans-serif;
-font-size: 36px
+font-size: 36px;
+margin-bottom: 0px
 `
 const Numbers = styled.p`
-  margin-bottom: 50px;
+
+  margin: 5px 0 50px 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
-  letter-spacing: 15px
+  letter-spacing: 20px
 
 `
 
@@ -28,17 +31,39 @@ function Home({totalCountries, totalArea, totalPopulation}) {
     <>
 
       <Main>
+        
         <section>
           <Welcome>Welcome Home, 3rd-Star Explorer</Welcome>
 
-          <Titles>Population on Earth:</Titles>
-          <Numbers>{totalPopulation}</Numbers>
+          <Header>Population on Earth:</Header>
+          <Numbers>
+            <CountUp
+              start={7300000000}
+              end={totalPopulation}
+              duration={600}
+              separator=","
+            />
+          </Numbers>
 
-          <Titles>Area of Land (mi<sup>2</sup>):</Titles>
-          <Numbers>{totalArea}</Numbers>
+          <Header>Area of Land (mi<sup>2</sup>):</Header>
+          <Numbers>
+            <CountUp
+              start={50000}
+              end={totalArea}
+              duration={600}
+              separator=","
+            />
+          </Numbers>
 
-          <Titles>Recorded Designated Regions:</Titles>
-          <Numbers>{totalCountries}</Numbers>
+          <Header>Recorded Designated Regions:</Header>
+          <Numbers>
+            <CountUp
+              end={totalCountries}
+              duration={60}
+              separator=","
+            />
+            
+          </Numbers>
         </section>
       </Main>
     </>

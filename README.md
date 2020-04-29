@@ -33,13 +33,15 @@ Mobile View (via whimsical.com)
 - Create a JSON file with country and region descriptions and images to be passed into the app for more robust learning experience
 - Add a map widget to country and region details page
 
-### Supporting Libraries
+### Supporting Libraries & 
 
 
-|     Library        | Description                                |
-| :--------------:   | :----------------------------------------- |
-|   Styled Components| Allows me to write CSS directly in my component files for semantic tags that carry style.|
-|   React Router     | Used to navigate through pages in the app  |
+|     Type     |     Name           | Description                                |
+|:------------:| :--------------:   | :----------------------------------------- |
+|    Library   |   Styled Components| Allows me to write CSS directly in my component files for semantic tags that carry style.|
+|    Library   |   React Router     | Used to navigate through pages in the app  |
+|    Component |   React Count-up   | Used for number animation  (https://github.com/glennreyes/react-countup)      |
+
 
 ### REST Countries API 
 
@@ -164,8 +166,8 @@ API SNIPPET
 | Region pg.          |    M     |     6 hrs      |      30 mins  |      -      |
 | Countries pg.       |    H     |     6 hrs      |      20 mins  |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
-| Styling             |    L     |     6 hrs      |       5 hrs   |      -      |
-| TOTAL               |    --    |    44 hrs      |      19.5 hrs |     TBD     |
+| Styling             |    L     |     6 hrs      |      6.25 hrs |      -      |
+| TOTAL               |    --    |    44 hrs      |     20.75 hrs |     TBD     |
 
 ### Helper Functions
 
@@ -203,7 +205,7 @@ API SNIPPET
 
 ## Change Log
 
-Header is now stately due to the hamburger menu functionality
-Explorer is now stately due the random country function
+- Header is now stately due to the hamburger menu functionality
+- Explorer is now stately due the random country function
 
 
