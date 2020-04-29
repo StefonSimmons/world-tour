@@ -92,7 +92,7 @@ function App() {
             />
         </Route>
 
-        <Route path={`/region/:name`}>
+        <Route path={`/region/:regionName`}>
           <Region
             regions= {regions}
           />
