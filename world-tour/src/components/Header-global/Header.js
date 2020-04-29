@@ -31,7 +31,9 @@ const Earth = styled.img`
   position: absolute;
   height: 30vmin;
   top: 20px;
-  right: 41.75vw;
+  right: 42vw;
+  border-radius: 360px;
+  box-shadow: 5px 10px 20px #F4D35E;
   cursor: pointer;
   animation: ${EarthSpin} infinite 50s linear;
 `

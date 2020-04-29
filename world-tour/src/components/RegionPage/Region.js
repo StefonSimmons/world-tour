@@ -25,10 +25,12 @@ const Divider = styled.hr`
 const Table = styled.table`
   width: 350px
 `
+const Record = styled.tr`
+  line-height: 2.25
+`
 const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
-  line-height: 2
 `
 const Numbers = styled.td`
   font-family: sans-serif;
@@ -54,7 +56,6 @@ const Summary = styled.section`
 const SideImage = styled.aside`
   height: 1000px;
   width: 600px;
-
 `
 
 function Region({regions}) {
@@ -90,7 +91,7 @@ function Region({regions}) {
           <Divider/>
           <Table>
             <tbody>
-              <tr>
+              <Record>
                 <Label>Population in {regionName}:</Label>
                 <Numbers>
                   <CountUp
@@ -98,8 +99,8 @@ function Region({regions}) {
                     separator=','
                   />  
                 </Numbers>
-              </tr>
-              <tr>
+              </Record>
+              <Record>
                 <Label>Area of Land (mi<sup>2</sup>):</Label>
                 <Numbers>
                   <CountUp
@@ -107,8 +108,8 @@ function Region({regions}) {
                     separator=','
                   />
                 </Numbers>
-              </tr>
-              <tr>
+              </Record>
+              <Record>
                 <Label>Total Countries:</Label>
                 <Numbers>
                   <CountUp
@@ -116,7 +117,7 @@ function Region({regions}) {
                     separator=','
                   />
                 </Numbers>
-              </tr>
+              </Record>
             </tbody>
           </Table>
           <Divider/>
@@ -134,8 +135,6 @@ function Region({regions}) {
         <SideImage className={regionName}>
         </SideImage>
       </Main>
-      
-      
     </div>
   )
 }
