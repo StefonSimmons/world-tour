@@ -36,9 +36,10 @@ Mobile View (via whimsical.com)
 ### Supporting Libraries
 
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React Router   | Used to navigate through pages in the app  |
+|     Library        | Description                                |
+| :--------------:   | :----------------------------------------- |
+|   Styled Components| Allows me to write CSS directly in my component files for semantic tags that carry style.|
+|   React Router     | Used to navigate through pages in the app  |
 
 ### REST Countries API 
 
@@ -140,7 +141,7 @@ API SNIPPET
 |     Home     | functional |   n   |   y   | takes total sum data from API for all countries                 |
 |     About    | functional |   n   |   n   | Static page with overview of the app                            |
 |    Contact   | functional |   n   |   n   | Static page with contact information (i.e. email, github)       |
-| Explorer pg. | functional |   n   |   y   | Static page of mapped regions                                   |
+| Explorer pg. | functional |   y   |   y   | Static page of mapped regions                                   |
 |  Region pg.  | class      |   y   |   y   | Dynamic pg. showing different regions ex.("/region/Americas")   |
 | Countries pg.| class      |   y   |   y   | Dynamic pg. showing different countries ex.("/country/Canada")  |
 
@@ -154,17 +155,17 @@ API SNIPPET
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Installing          |    H     |     15 mins    |      30 mins  |      -      |
-| App.js / Calling API|    H     |     5 hrs      |        -      |      -      |
+| App.js / Calling API|    H     |     5 hrs      |      30 mins  |      -      |
 | Header/Nav          |    H     |     4 hrs      |      8 hrs    |      -      |
-| Home                |    L     |     4 hrs      |      10 mins  |      -      |
+| Home                |    L     |     4 hrs      |      2 hrs    |      -      |
 | About               |    L     |     2 hrs      |      10 mins  |      -      |
 | Contact             |    L     |     2 hrs      |      10 mins  |      -      |
-| Explorer pg.        |    H     |     6 hrs      |      20 mins  |      -      |
-| Region pg.          |    M     |     6 hrs      |      20 mins  |      -      |
+| Explorer pg.        |    H     |     6 hrs      |      2.5 hrs  |      -      |
+| Region pg.          |    M     |     6 hrs      |      30 mins  |      -      |
 | Countries pg.       |    H     |     6 hrs      |      20 mins  |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
-| Styling             |    L     |     6 hrs      |        -      |      -      |
-| TOTAL               |    --    |    44 hrs      |      10 hrs    |     TBD     |
+| Styling             |    L     |     6 hrs      |       5 hrs   |      -      |
+| TOTAL               |    --    |    44 hrs      |      19.5 hrs |     TBD     |
 
 ### Helper Functions
 
@@ -202,7 +203,7 @@ API SNIPPET
 
 ## Change Log
 
-Header is stately due to the hamburger menu functionality
-
+Header is now stately due to the hamburger menu functionality
+Explorer is now stately due the random country function
 
 

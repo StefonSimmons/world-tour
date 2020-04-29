@@ -7,6 +7,7 @@ const Main = styled.main`
   margin: 250px 0
 `
 const Welcome = styled.h1`
+  margin-bottom: 80px;
   font-family: 'Montserrat', sans-serif;
   font-size: 48px
 `
@@ -15,6 +16,7 @@ font-family: 'Manrope', sans-serif;
 font-size: 36px
 `
 const Numbers = styled.p`
+  margin-bottom: 50px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   letter-spacing: 15px
@@ -32,7 +34,7 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Titles>Population on Earth:</Titles>
           <Numbers>{totalPopulation}</Numbers>
 
-          <Titles>Area of Land (mi<sup>2</sup>)</Titles>
+          <Titles>Area of Land (mi<sup>2</sup>):</Titles>
           <Numbers>{totalArea}</Numbers>
 
           <Titles>Recorded Designated Regions:</Titles>

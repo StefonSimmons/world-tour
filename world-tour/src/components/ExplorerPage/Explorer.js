@@ -62,6 +62,7 @@ const RegionContainer = styled.div`
 const Region = styled.h2`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 36px;
+  letter-spacing: 5px;
   padding: 0px 5px;
   color: white;
   background-color: rgba(20,20,20,.1);
