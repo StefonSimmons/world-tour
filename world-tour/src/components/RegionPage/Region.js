@@ -10,8 +10,8 @@ const Main = styled.main`
   display: flex;
   justify-content: space-between;
   text-align: left;
-  margin: 125px 0;
-  padding: 0 0 0 0px;
+  margin: 125px 0 0 0;
+  padding-bottom: 80px
 `
 const Header = styled.h1`
   font-family: 'Nunito Sans', sans-serif;
@@ -51,11 +51,14 @@ const Summary = styled.section`
   width: 500px;
   background-color: rgba(20,20,20,.1);
   box-shadow: 5px 10px 20px rgb(20,20,20);
+  border-radius: 8px;
   padding: 60px 0 0 100px
 `
 const SideImage = styled.aside`
   height: 1000px;
   width: 600px;
+  box-shadow: 5px 10px 20px rgb(20,20,20);
+  border-radius: 8px
 `
 
 function Region({regions}) {

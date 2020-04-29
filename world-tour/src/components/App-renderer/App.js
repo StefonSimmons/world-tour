@@ -7,6 +7,7 @@ import Contact from '../ContactPage/Contact'
 import Explorer from '../ExplorerPage/Explorer'
 import Region from '../RegionPage/Region'
 import Country from '../CountryPage/Country'
+import Footer from '../Footer-global/Footer'
 import {Route, Switch} from 'react-router-dom'
 
   
@@ -105,7 +106,7 @@ function App() {
         </Route>
 
       </Switch>
-      
+      <Footer/>
     </div>
   );
 }

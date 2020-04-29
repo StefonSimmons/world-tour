@@ -6,7 +6,7 @@ const Main = styled.main`
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 225px 0;
+  margin: 225px 0 100px 0;
 `
 const Section = styled.section`
   width: 900px;

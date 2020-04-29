@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Main = styled.main`
   justify-content: center;
   text-align: center;
-  margin: 225px 0
+  margin: 225px 0 0 0
 `
 
 const SectionRandom = styled.section`

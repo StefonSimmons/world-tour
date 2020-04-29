@@ -4,16 +4,19 @@ import CountUp from 'react-countup'
 import styled from 'styled-components'
 
 const Main = styled.main`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: left;
-  margin: 175px 0;
-  padding: 0 0 0 0px;
+  margin: 250px 0 0 0;
+  padding-bottom: 80px
 `
 const Summary = styled.section`
   width: 500px;
   background-color: rgba(20,20,20,.1);
   box-shadow: 5px 10px 20px rgb(20,20,20);
   padding: 40px 0 40px 100px;
-  margin-bottom: 30px
+  margin-bottom: 50px
 `
 const Header = styled.h1`
   margin-bottom: 5px;
@@ -25,13 +28,12 @@ const NativeName = styled.i`
   font-size: 12px;
   letter-spacing: 5px;
 `
-
 const Divider = styled.hr`
-  width: 350px;
+  width: 450px;
   margin: 18px 0px
 `
 const Table = styled.table`
-  width: 350px
+  width: 450px
 `
 const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;

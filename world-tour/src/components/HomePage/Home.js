@@ -5,7 +5,8 @@ import CountUp from 'react-countup'
 const Main = styled.main`
   justify-content: center;
   text-align: center;
-  margin: 250px 0
+  margin: 250px 0 0 0;
+  padding-bottom: 5rem;
 `
 const Welcome = styled.h1`
   margin-bottom: 80px;
