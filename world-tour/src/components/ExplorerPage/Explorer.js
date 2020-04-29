@@ -41,10 +41,6 @@ const CountryLink = styled(Link)`
   text-decoration: none;
   color: black
 `
-const RegionLink = styled(CountryLink)`
-  text-decoration: none;
-  color: black
-`
 const SectionRegion = styled(SectionRandom)`
   margin: 50px 0
 `
@@ -55,6 +51,10 @@ const RegionContainer = styled.div`
   margin: 10px;
   height: 300px;
   width: 1000px;
+`
+const RegionLink = styled(CountryLink)`
+  text-decoration: none;
+  color: black
 `
 const Region = styled.h2`
   font-family: 'Nunito Sans', sans-serif;
