@@ -10,7 +10,7 @@ const Main = styled.main`
   display: flex;
   justify-content: space-between;
   text-align: left;
-  margin: 125px 0 0 0;
+  margin: 175px 0 0 0;
   padding-bottom: 80px
 `
 const Header = styled.h1`
@@ -46,6 +46,7 @@ const Country = styled.h2`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   letter-spacing: 5px;
+  color: rgb(60,60,155)
 `
 const Summary = styled.section`
   width: 500px;
@@ -56,8 +57,8 @@ const Summary = styled.section`
 `
 const SideImage = styled.aside`
   height: 1000px;
-  width: 600px;
-  box-shadow: 5px 10px 20px rgb(20,20,20);
+  width: 620px;
+  box-shadow: -5px 10px 20px rgb(20,20,20);
   border-radius: 8px
 `
 
