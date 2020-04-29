@@ -17,7 +17,9 @@ const Header = styled.h1`
   font-family: 'Manrope', sans-serif;
   font-size: 32px;
   letter-spacing: 2px;
-  margin: 25px 0 0 0
+  margin: 25px 0 0 0;
+  color: rgb(16, 23, 130)
+
 `
 const Paragraph = styled.p`
   font-family: 'Roboto', sans-serif;

@@ -27,15 +27,17 @@ const Header = styled.h1`
   font-family: 'Manrope', sans-serif;
   font-size: 32px;
   letter-spacing: 2px;
-  margin: 25px 0 0 0
+  margin: 25px 0 0 0;
+  color: rgb(16, 23, 130)
 `
 const Paragraph = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   text-align: left;
   margin: 15px 0;
   letter-spacing: 3px;
-  color: rgb(60,100,60)
+  line-height: 1.6;
+  color: rgb(60,95,60)
 `
 const Link = styled.a`
   color: black;
