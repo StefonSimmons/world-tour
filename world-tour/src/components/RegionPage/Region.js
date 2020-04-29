@@ -1,7 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {useParams} from "react-router-dom"
 
-function Region() {
+function Region({regions}) {
+  
+  const { name } = useParams()
+  // This gets me all countries data specific to the region clicked from explorer
+  const countries = regions.filter(r => r.region === name)
+    console.log(countries)
+
+  
   return (
     <div>
       <main>
@@ -26,9 +34,13 @@ function Region() {
         <hr />
         {/* Need to setup a map loop for regions here*/}
         <div>
-          <Link to='/country/:alpha3code'>
-            Botwana
-          </Link>
+          {countries.map((c, id) => 
+            <div key= {id}>
+              <Link to= {`/country/${c.name}`}>
+                {c.name}
+              </Link>
+            </div>
+          )}
         </div>
       </main>
     </div>

@@ -80,6 +80,7 @@ function App() {
         <Route path="/about" exact>
           <About />
         </Route>
+
         <Route path="/contact" exact>
           <Contact />
         </Route>
@@ -91,9 +92,12 @@ function App() {
             />
         </Route>
 
-        <Route path="/region/:alphacode3">
-          <Region />
+        <Route path={`/region/:name`}>
+          <Region
+            regions= {regions}
+          />
         </Route>
+
         <Route path="/country/:alpha3code">
           <Country />
         </Route>

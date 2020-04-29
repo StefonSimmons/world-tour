@@ -38,9 +38,9 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Header>Population on Earth:</Header>
           <Numbers>
             <CountUp
-              start={7300000000}
+              start={7340000000}
               end={totalPopulation}
-              duration={600}
+              duration={60}
               separator=","
             />
           </Numbers>
