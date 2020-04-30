@@ -24,7 +24,6 @@ const Numbers = styled.p`
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   letter-spacing: 20px
-
 `
 
 function Home({totalCountries, totalArea, totalPopulation}) {

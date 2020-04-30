@@ -47,7 +47,7 @@ const Details = styled.td`
   text-align: right
 `
 const Flag = styled.img`
-  width: 600px;
+  width: 500px;
   border: grey solid 2px
 `
 const ReturnBtn = styled.button`

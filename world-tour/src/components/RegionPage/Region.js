@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const Main = styled.main`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
   margin: 175px 0 0 0;
   padding-bottom: 80px
@@ -19,11 +19,11 @@ const Header = styled.h1`
   letter-spacing: 5px;
 `
 const Divider = styled.hr`
-  width: 350px;
+  width: 400px;
   margin: 18px 0px
 `
 const Table = styled.table`
-  width: 350px
+  width: 400px
 `
 const Record = styled.tr`
   line-height: 2.25
@@ -49,17 +49,24 @@ const Country = styled.h2`
   color: rgb(60,60,155)
 `
 const Summary = styled.section`
+  height: 940px;
   width: 500px;
   background-color: rgba(20,20,20,.1);
-  box-shadow: 5px 10px 20px rgb(20,20,20);
   border-radius: 8px;
-  padding: 60px 0 0 100px
+  padding: 60px 60px 0 60px
 `
 const SideImage = styled.aside`
   height: 1000px;
   width: 620px;
-  box-shadow: -5px 10px 20px rgb(20,20,20);
+  // box-shadow: -5px 10px 20px rgb(20,20,20);
   border-radius: 8px
+`
+const CountryList = styled.section`
+  overflow: auto;
+  height: 615px;
+  background-color: rgba(10,10,10,.1);
+  padding-left: 15px;
+  // margin-right: 100px
 `
 
 function Region({regions}) {
@@ -125,7 +132,7 @@ function Region({regions}) {
           </Table>
           <Divider/>
           {/* Need to setup a map loop for regions here*/}
-          <section>
+          <CountryList>
             {countries.map((c, id) => 
               <div key= {id}>
                 <CountryLink to= {`/country/${c.name}`}>
@@ -133,9 +140,9 @@ function Region({regions}) {
                 </CountryLink>
               </div>
             )}
-          </section>
+          </CountryList>
         </Summary>
-        <SideImage className={regionName}>
+        <SideImage className={`${regionName}Region`}>
         </SideImage>
       </Main>
     </div>
