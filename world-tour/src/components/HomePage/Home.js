@@ -19,6 +19,9 @@ const Welcome = styled.h1`
   @media(max-width: 861px){   
     font-size: 36px;
   }
+  @media(max-width: 659px){   
+    font-size: 24px;
+  }
   @media(max-width: 365px){   
     font-size: 18px;
   }
@@ -34,6 +37,9 @@ color: rgb(16, 23, 100);
   font-size: 24px;
   letter-spacing: 7px;
 }
+@media(max-width: 659px){   
+  font-size: 18px;
+}
 @media(max-width: 365px){   
   font-size: 15px;
   letter-spacing: 7px;
@@ -45,6 +51,9 @@ const Numbers = styled.p`
   font-size: 24px;
   letter-spacing: 20px;
 
+  @media(max-width: 659px){   
+    font-size: 18px;
+  }
   @media(max-width: 365px){   
     font-size: 15px;
     letter-spacing: 15px;
@@ -55,6 +64,9 @@ const Split = styled.span`
   font-size: 90px;
   color: #282c34;
 
+  @media(max-width: 659px){   
+    font-size: 24px;
+  }
   @media(max-width: 365px){   
     font-size: 18px;
   }
@@ -65,6 +77,10 @@ const Divider = styled.hr`
   height: 1px;
   background-color: #1B2432;
 
+  @media(max-width: 659px){   
+    width: 400px;
+    margin-bottom: 60px;  
+  }
   @media(max-width: 365px){   
     width: 250px;
     margin-bottom: 60px;
