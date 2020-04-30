@@ -1,33 +1,33 @@
 .Africa{
-  background-image: url("../../images/Africa.jpg");
+  background-image: url("../../images/ExplorerRegions/Africa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Europe{
-  background-image: url("../../images/Europe.jpg");
+  background-image: url("../../images/ExplorerRegions/Europe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Americas{
-  background-image: url("../../images/Americas.jpg");
+  background-image: url("../../images/ExplorerRegions/Americas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Asia{
-  background-image: url("../../images/Asia.jpg");
+  background-image: url("../../images/ExplorerRegions/Asia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .Oceania{
-  background-image: url("../../images/Oceania.jpg");
+  background-image: url("../../images/ExplorerRegions/Oceania.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
 }
 .Polar{
-  background-image: url("../../images/Polar.jpg");
+  background-image: url("../../images/ExplorerRegions/Polar.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
