@@ -79,8 +79,8 @@ const Earth = styled.img`
     right: 30vw;
   }
   @media(max-width: 365px){ 
-    top: 34vw;  
-    right: 28vw;
+    top: 22vw;  
+    right: 30vw;
     box-shadow: 5px 10px 30px #F4D35E;
   }
 `

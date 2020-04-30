@@ -18,7 +18,15 @@ const Header = styled.h1`
   font-size: 32px;
   letter-spacing: 2px;
   margin: 25px 0 0 0;
-  color: rgb(16, 23, 130)
+  color: rgb(16, 23, 130);
+
+  @media(max-width: 365px){   
+    font-size: 28px
+  }
+  @media(max-width: 365px){   
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
 
 `
 const Paragraph = styled.p`
@@ -27,6 +35,13 @@ const Paragraph = styled.p`
   margin: 25px 0;
   letter-spacing: 3px;
   color: black;
+
+  @media(max-width: 865px){   
+    font-size: 15px
+  }
+  @media(max-width: 365px){   
+    font-size: 12px
+  }
 `
 const Link = styled.a`
   color: black;

@@ -32,7 +32,14 @@ const Header = styled.h1`
   font-size: 32px;
   letter-spacing: 2px;
   margin: 25px 0 0 0;
-  color: rgb(16, 23, 130)
+  color: rgb(16, 23, 130);
+
+  @media(max-width: 867px){   
+    font-size: 28px;
+  }
+  @media(max-width: 365px){   
+    font-size: 24px;
+  }
 `
 const Paragraph = styled.p`
   font-family: 'Roboto', sans-serif;
@@ -41,7 +48,16 @@ const Paragraph = styled.p`
   margin: 15px 0;
   letter-spacing: 3px;
   line-height: 1.6;
-  color: rgb(60,95,60)
+  color: rgb(60,95,60);
+
+  @media(max-width: 867px){   
+    font-size: 15px;
+    letter-spacing: 1px;
+
+  }
+  @media(max-width: 365px){   
+    font-size: 15px
+  }
 `
 const Link = styled.a`
   color: black;
