@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 import CountUp from 'react-countup'
 import styled from 'styled-components'
 
@@ -50,11 +50,14 @@ const Flag = styled.img`
   width: 600px;
   border: grey solid 2px
 `
-const Return = styled.button`
+const ReturnBtn = styled.button`
   font-size: 18px;
   border: solid 1px rgba(20,20,20,.2);
   border-radius: 15px;
-  background-color: rgba(60,60,155,.1)
+  background-color: rgba(60,60,155,.1);
+  cursor: pointer;
+`
+const RegionLink = styled(Link)`
 `
 
 function Country({regions}) {
@@ -70,7 +73,9 @@ function Country({regions}) {
     <div>
       <Main>
         <Summary>
-          <Return>{`${`⬅`} ${country.region}`}</Return>
+          <RegionLink to={`/region/${country.region}`}>
+            <ReturnBtn>{`${`⬅`} ${country.region}`}</ReturnBtn>
+          </RegionLink>
           <Header>{countryName}</Header>
           <NativeName>( {country.nativeName} )</NativeName>
           <Divider/>

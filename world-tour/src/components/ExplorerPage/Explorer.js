@@ -98,10 +98,11 @@ function Explorer({ uniqueRegions, countries }) {
           
         </SectionRandom>
         <SectionRegion>
-          {/* A map loop for regions here. Include a className so I can style the region names with a background image*/}
+          {/* Includes a className so I can style the region names with a background image*/}
           {uniqueRegions.map((region, id) => 
             <RegionContainer className={region} key={id}>
-              <RegionLink to={`/region/${region}`}><Region>
+              <RegionLink to={`/region/${region}`}>
+                <Region>
                   {region}
                 </Region>
               </RegionLink>
