@@ -33,14 +33,14 @@ Mobile View (via whimsical.com)
 - Create a JSON file with country and region descriptions and images to be passed into the app for more robust learning experience
 - Add a map widget to country and region details page
 
-### Supporting Libraries & 
+### Supporting Libraries 
 
 
 |     Type     |     Name           | Description                                |
 |:------------:| :--------------:   | :----------------------------------------- |
 |    Library   |   Styled Components| Allows me to write CSS directly in my component files for semantic tags that carry style.|
 |    Library   |   React Router     | Used to navigate through pages in the app  |
-|    Component |   React Count-up   | Used for number animation  (https://github.com/glennreyes/react-countup)      |
+|    Library |   React Count-up   | Used for number animation  (https://github.com/glennreyes/react-countup)      |
 
 
 ### REST Countries API 
@@ -156,18 +156,18 @@ API SNIPPET
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Installing          |    H     |     15 mins    |      30 mins  |      -      |
-| App.js / Calling API|    H     |     5 hrs      |      30 mins  |      -      |
-| Header/Nav          |    H     |     4 hrs      |      8 hrs    |      -      |
-| Home                |    L     |     4 hrs      |      2 hrs    |      -      |
-| About               |    L     |     2 hrs      |      10 mins  |      -      |
-| Contact             |    L     |     2 hrs      |      10 mins  |      -      |
-| Explorer pg.        |    H     |     6 hrs      |      2.5 hrs  |      -      |
-| Region pg.          |    M     |     6 hrs      |      30 mins  |      -      |
-| Countries pg.       |    H     |     6 hrs      |      20 mins  |      -      |
+| Installing          |    H     |     15 mins    |      30 mins  |      30m     |
+| App.js / Calling API|    H     |     5 hrs      |      30 mins  |      30m     |
+| Header/Nav/Footer   |    H     |     4 hrs      |      9 hrs    |      9h      |
+| Home                |    L     |     4 hrs      |      2 hrs    |      2h      |
+| About               |    L     |     2 hrs      |      10 mins  |      10m     |
+| Contact             |    L     |     2 hrs      |      10 mins  |      10m     |
+| Explorer pg.        |    H     |     6 hrs      |      2.5 hrs  |      -       |
+| Region pg.          |    M     |     6 hrs      |      1 hr     |      1      |
+| Countries pg.       |    H     |     6 hrs      |      4.5 hrs  |      -      |
 | Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
-| Styling             |    L     |     6 hrs      |      6.25 hrs |      -      |
-| TOTAL               |    --    |    44 hrs      |     20.75 hrs |     TBD     |
+| Styling/Responsive Design|  L  |     6 hrs      |      13 hrs    |           |
+| TOTAL               |    --    |    44 hrs      |     33.5 hrs |     TBD     |
 
 ### Helper Functions
 
@@ -207,5 +207,6 @@ API SNIPPET
 
 - Header is now stately due to the hamburger menu functionality
 - Explorer is now stately due the random country function
+- Added a Footer
 
 

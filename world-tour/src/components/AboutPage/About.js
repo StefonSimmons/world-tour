@@ -6,12 +6,17 @@ const Main = styled.main`
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 225px 0 100px 0;
+  margin: 250px 0 100px 0;
 `
 const Section = styled.section`
   width: 900px;
   border-radius: 360px; 
   background-color: rgb(183,176,159);
+  
+  @media(max-width: 861px){   
+    width: 600px;
+    margin-bottom: 45px;
+  }
 `
 const AboutSection = styled.section`
   display: flex;
