@@ -9,7 +9,7 @@ const Main = styled.main`
   margin: 225px 0 0 0
 `
 
-const SectionRandom = styled.section`
+const RandomSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@ const CountryLink = styled(Link)`
   text-decoration: none;
   color: black
 `
-const SectionRegion = styled(SectionRandom)`
+const RegionSection = styled(RandomSection)`
   margin: 50px 0
 `
 const RegionContainer = styled.div`
@@ -80,13 +80,12 @@ function Explorer({ uniqueRegions, countries }) {
     
     updateClickable(!clickable)
     updateCountry(randomCountry)
-    // console.log(randomCountry)
   }
 
   return (
     <div>
       <Main>
-        <SectionRandom>
+        <RandomSection>
 
           <RandoBtn onClick= {(e) => handleRandomBtn()}>Visit a Random Country</RandoBtn>
           
@@ -96,8 +95,8 @@ function Explorer({ uniqueRegions, countries }) {
             </CountryLink>
           </RandoBox>
           
-        </SectionRandom>
-        <SectionRegion>
+        </RandomSection>
+        <RegionSection>
           {/* Includes a className so I can style the region names with a background image*/}
           {uniqueRegions.map((region, id) => 
             <RegionContainer className={region} key={id}>
@@ -108,7 +107,7 @@ function Explorer({ uniqueRegions, countries }) {
               </RegionLink>
             </RegionContainer>
           )} 
-        </SectionRegion>  
+        </RegionSection>  
       </Main>
       
       

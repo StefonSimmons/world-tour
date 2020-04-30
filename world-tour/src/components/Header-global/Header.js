@@ -2,29 +2,35 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import earth from '../../images/Emblem-earth.svg'
 import hamburger from '../../images/hamburger.png'
+import logo from '../../images/logoWT.png'
 import styled, {keyframes} from 'styled-components'
 
 
 const AppHeader = styled.header`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-color: #282c34;
-  position: relative;
-  opacity: .9
+  // position: relative;
+  opacity: .85
 `
-const NavBar = styled.nav`
-  height: 80px;
+const Logo = styled.img`
+  width: 100px;
+  padding-left: 25px
 `
-const Wrapper = styled.ul`
-`
-const Hamburger= styled.img`
-  display: none;
+const OzoneLayer = styled.div`
+  // position: relative;
+  align-self: center;
+  text-align: right;
+  width: 75px;
 
-  @media(max-width: 861px){
-    display: inline-block;
-    width: 40px;
-    padding: 6px 40px
+  @media(max-width: 1000px){   
+    width: 50px;
+    text-align: left;
   }
+  @media(max-width: 861px){   
+    width: 30px;
+  }
+
 `
 const EarthSpin = keyframes`
   from {
@@ -36,20 +42,41 @@ const EarthSpin = keyframes`
 `
 const Earth = styled.img`
   position: absolute;
-  height: 30vmin;
-  top: 20px;
-  right: 42vw;
+  height: 170px;
+  // align-self: center;
+  // top: 20px;
+  // right: 42vw;
   border-radius: 360px;
   box-shadow: 5px 10px 20px #F4D35E;
   cursor: pointer;
   animation: ${EarthSpin} infinite 50s linear;
   
-  @media(max-width: 861px){   
-    right: 35vw;
+  &:hover {
+    box-shadow: 5px 10px 40px #F4D35E;
   }
+  @media(max-width: 861px){   
+    height: 150px;
+    right: 41vw;
+  }
+`
+const NavBar = styled.nav`
+  height: 80px;
+  align-self: center;
+  @media(max-width: 1000px){   
+    height: 60px;
+  }
+`
+const Wrapper = styled.ul`
+  text-align: center;
+  padding-left: 0px;
+`
+const Hamburger= styled.img`
+  display: none;
 
-  @media(max-width: 800px){
-    right: 30vw;
+  @media(max-width: 861px){
+    display: inline-block;
+    width: 40px;
+    padding: 0 40px;
   }
 `
 const MenuItemContainer = styled.li`
@@ -58,9 +85,14 @@ const MenuItemContainer = styled.li`
   padding: 15px;
   border-left: solid 1px grey;
 
+  @media(max-width: 1000px){   
+    padding: 5px;
+  }
   @media(max-width: 861px){
     display: none; 
     background-color: #282c34;
+    border-left: none;
+
   }
 `
 const MenuLink = styled(Link)`
@@ -69,11 +101,18 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   text-align: center;
   margin: 25px;
-
+  @media(max-width: 1000px){   
+    margin: 15px;
+  }
   @media(max-width: 861px){   
-    margin: 25px 15px;
+    margin: 25px;
+    font-size: 24px
   }
 `
+const ExplorerLink = styled(Link)`
+`
+
+
 
 function Header() {
 
@@ -84,6 +123,13 @@ function Header() {
     <div>
 
       <AppHeader>
+        <Logo src={logo} alt='logo'/>
+        <OzoneLayer>
+          <ExplorerLink to='/explorer'>
+            <Earth src={earth} className="earth-logo" alt="logo" />
+          </ExplorerLink>
+        </OzoneLayer>
+
         <NavBar>
           <Wrapper>
             <Hamburger src={hamburger} alt="hamburger menu" onClick={(e) => updateOpen(!open)}/>
@@ -108,12 +154,7 @@ function Header() {
 
           </Wrapper>
         </NavBar>
-        <div>
-          <Link to='/explorer'>
-            <Earth src={earth} className="earth-logo" alt="logo" />
-          </Link>
-        </div>
-        
+
       </AppHeader>
     </div>
   )

@@ -62,9 +62,9 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Header>Area of Land (mi<sup>2</sup>)</Header>
           <Numbers>
             <CountUp
-              start={50000}
+              start={30000000}
               end={totalArea}
-              duration={600}
+              duration={60}
               separator=","
             />
           </Numbers>
