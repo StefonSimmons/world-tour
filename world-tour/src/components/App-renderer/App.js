@@ -45,7 +45,7 @@ function App() {
   function listRegions() {
     const uniqueRegions = []
     regions.forEach((r) => {
-      if (uniqueRegions.includes(r.region) === false) {
+      if (uniqueRegions.includes(r.region) === false && r.region !== '') {
         uniqueRegions.push(r.region)
       }
     })

@@ -5,13 +5,13 @@ const Foot = styled.footer`
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 1vh;
+  height: .1vh;
   text-align: center;
   opacity: .9
 `
 const Bottom = styled.div`
   background-color: rgb(28,28,28);
-  padding: 2px 0; 
+  padding: 1px 0; 
 `
 const Text = styled.h6`
   font-family: 'Merriweather Sans', sans-serif;
