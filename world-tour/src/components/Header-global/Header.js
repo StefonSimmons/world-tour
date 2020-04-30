@@ -126,7 +126,7 @@ function Header() {
         <Logo src={logo} alt='logo'/>
         <OzoneLayer>
           <ExplorerLink to='/explorer'>
-            <Earth src={earth} className="earth-logo" alt="logo" />
+            <Earth src={earth} alt="logo" />
           </ExplorerLink>
         </OzoneLayer>
 

@@ -12,6 +12,9 @@ const Welcome = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   color: #282c34;
+  @media(max-width: 861px){   
+    font-size: 36px;
+  }
 `
 const Header = styled.h2`
 margin-bottom: 0px;
@@ -19,6 +22,11 @@ font-family: 'Manrope', sans-serif;
 font-size: 30px;
 letter-spacing: 10px;
 color: rgb(16, 23, 100);
+
+@media(max-width: 861px){   
+  font-size: 24px;
+  letter-spacing: 7px;
+}
 `
 const Numbers = styled.p`
   margin: 5px 0 50px 0;
