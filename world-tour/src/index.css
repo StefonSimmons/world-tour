@@ -7,8 +7,7 @@ body, html{
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: antiquewhite 
-  ;
+  background-color: antiquewhite;
 }
 
 code {
@@ -16,4 +15,4 @@ code {
     monospace;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Manrope:700|Montserrat:600|Nunito+Sans:700|Roboto|Source+Sans+Pro:200&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Manrope:700|Montserrat:600|Nunito+Sans:700|Roboto|Source+Sans+Pro:200&display=swap');
