@@ -95,9 +95,10 @@ function Explorer({ uniqueRegions, countries }) {
     const randomCountry = countries.filter((country, i) => countries.indexOf(country) === randomNumber)
     console.log(clickable)
     
-    updateClickable(!clickable)
+    updateClickable(true)
     updateCountry(randomCountry)
   }
+
 
   return (
     <div>
