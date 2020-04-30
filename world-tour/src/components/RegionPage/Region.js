@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {useParams} from "react-router-dom"
 import CountUp from 'react-countup'
-import '../ExplorerPage/Explorer.css'
+import './Region.css'
 import styled from 'styled-components'
 
 

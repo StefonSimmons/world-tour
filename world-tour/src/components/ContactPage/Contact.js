@@ -9,7 +9,7 @@ const Main = styled.main`
 `
 const Section = styled.section`
   width: 900px;
-  border-radius: 5px; 
+  border-radius: 360px; 
   background-color: rgb(183,176,159);
   padding: 0 0 30px 0
 `

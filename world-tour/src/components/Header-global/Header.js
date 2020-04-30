@@ -5,7 +5,7 @@ import hamburger from '../../images/hamburger.png'
 import './Header.css'
 import styled, {keyframes} from 'styled-components'
 
-// Styled Components
+
 const AppHeader = styled.header`
   display: flex;
   justify-content: flex-end;
@@ -16,7 +16,8 @@ const AppHeader = styled.header`
 const NavBar = styled.nav`
   height: 80px;
 `
-const Wrapper = styled.ul``
+const Wrapper = styled.ul`
+`
 const Hamburger= styled.img`
   display: none;
 `
@@ -51,7 +52,6 @@ function Header() {
         <NavBar>
           <Wrapper>
             <Hamburger id="hamburger" src={hamburger} alt="hamburger menu" onClick={(e) => updateOpen(!open)}/>
-            {/* {console.log(open)} */}
             <li className= "menu-item-container" style={open ? { display:"block" }: {display:""}}>
               <Link to='/' className="menu-item" style={open ? { display:"block" }: {display:""}}>
                   Home
