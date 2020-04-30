@@ -51,6 +51,18 @@ const RegionContainer = styled.div`
   margin: 10px;
   height: 300px;
   width: 1000px;
+
+  @media(max-width: 1000px){   
+    height: 300px;
+    width: 860px;
+  }
+  @media(max-width: 861px){   
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border: 2px black solid;
+    border-radius: 10px
+  }
 `
 const RegionLink = styled(CountryLink)`
   text-decoration: none;

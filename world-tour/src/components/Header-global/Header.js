@@ -15,7 +15,12 @@ const AppHeader = styled.header`
 `
 const Logo = styled.img`
   width: 100px;
-  padding-left: 25px
+  padding-left: 25px;
+
+  @media(max-width: 365px){   
+    width: 70px;
+    height: 60px
+  }
 `
 const OzoneLayer = styled.div`
   // position: relative;
@@ -58,6 +63,23 @@ const Earth = styled.img`
     height: 150px;
     right: 41vw;
   }
+  @media(max-width: 730px){   
+    right: 39vw;
+  }
+  @media(max-width: 650px){   
+    right: 37vw;
+  }
+  @media(max-width: 500px){   
+    right: 35vw;
+  }
+  @media(max-width: 470px){   
+    right: 32vw;
+  }
+  @media(max-width: 365px){ 
+    top: 34vw;  
+    right: 28vw;
+    box-shadow: 5px 10px 30px #F4D35E;
+  }
 `
 const NavBar = styled.nav`
   height: 80px;
@@ -69,6 +91,10 @@ const NavBar = styled.nav`
 const Wrapper = styled.ul`
   text-align: center;
   padding-left: 0px;
+
+  @media(max-width: 365px){   
+    padding-top: 5px;
+  }
 `
 const Hamburger= styled.img`
   display: none;
@@ -77,6 +103,9 @@ const Hamburger= styled.img`
     display: inline-block;
     width: 40px;
     padding: 0 40px;
+  }
+  @media(max-width: 365px){   
+    width: 15px;
   }
 `
 const MenuItemContainer = styled.li`
@@ -92,7 +121,9 @@ const MenuItemContainer = styled.li`
     display: none; 
     background-color: #282c34;
     border-left: none;
-
+  }
+  @media(max-width: 365px){   
+    padding: 15px 0px;
   }
 `
 const MenuLink = styled(Link)`
@@ -101,12 +132,17 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   text-align: center;
   margin: 25px;
+
   @media(max-width: 1000px){   
     margin: 15px;
   }
   @media(max-width: 861px){   
     margin: 25px;
     font-size: 24px
+  }
+  @media(max-width: 365px){   
+    margin: 15px 0px;
+    font-size: 15px
   }
 `
 const ExplorerLink = styled(Link)`
