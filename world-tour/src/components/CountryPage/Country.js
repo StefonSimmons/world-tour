@@ -16,39 +16,104 @@ const Summary = styled.section`
   background-color: rgba(20,20,20,.1);
   box-shadow: 5px 10px 20px rgb(20,20,20);
   padding: 40px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
+
+  @media(max-width: 1050px){    
+    width: 800px;
+    text-align: center
+  }
+  @media(max-width: 900px){ 
+    width: 500px;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
 `
 const Header = styled.h1`
   margin-bottom: 5px;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 36px;
   letter-spacing: 5px;
+
+  @media(max-width: 1050px){    
+    font-size: 48px;
+  }
 `
 const NativeName = styled.i`
   font-size: 12px;
   letter-spacing: 5px;
+
+  @media(max-width: 1050px){    
+    font-size: 18px;
+  }
+  
 `
 const Divider = styled.hr`
   width: 500px;
-  margin: 18px 0px
+  margin: 18px 0px;
+
+  @media(max-width: 1050px){    
+    width: 800px;
+  }
+  @media(max-width: 900px){ 
+    width: 500px;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
 `
 const Table = styled.table`
-  width: 500px
+  width: 500px;
+
+  @media(max-width: 1050px){    
+    width: 800px;
+  }
+  @media(max-width: 900px){ 
+    width: 500px;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
 `
 const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
-  line-height: 2
+  line-height: 2;
+
+  @media(max-width: 1050px){    
+    font-size: 24px;
+    text-align: left
+  }
+  @media(max-width: 697px){ 
+    font-size: 18px;
+  }
 `
 const Details = styled.td`
   font-family: sans-serif;
   font-size: 18px;
   line-height: 2;
-  text-align: right
+  text-align: right;
+
+  @media(max-width: 1050px){    
+    font-size: 24px;
+  }
+  @media(max-width: 697px){ 
+    font-size: 18px;
+  }
 `
 const Flag = styled.img`
   width: 500px;
-  border: grey solid 2px
+  border: grey solid 2px;
+
+  @media(max-width: 1050px){    
+    width: 800px;
+  }
+  @media(max-width: 900px){ 
+    width: 500px;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
 `
 const ReturnBtn = styled.button`
   font-size: 18px;
@@ -56,6 +121,17 @@ const ReturnBtn = styled.button`
   border-radius: 15px;
   background-color: rgba(60,60,155,.1);
   cursor: pointer;
+
+  @media(max-width: 1050px){ 
+    font-family: 'Nunito Sans', sans-serif;   
+    font-size: 28px;
+    padding: 5px 12px;
+    background-color: rgba(60,60,155,.3);
+  }
+  @media(max-width: 900px){ 
+    font-size: 18px;
+  }
+
 `
 const RegionLink = styled(Link)`
 `

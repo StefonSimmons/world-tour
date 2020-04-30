@@ -75,6 +75,9 @@ const Earth = styled.img`
   @media(max-width: 470px){   
     right: 32vw;
   }
+  @media(max-width: 415px){   
+    right: 30vw;
+  }
   @media(max-width: 365px){ 
     top: 34vw;  
     right: 28vw;

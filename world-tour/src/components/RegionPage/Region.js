@@ -11,19 +11,73 @@ const Main = styled.main`
   justify-content: center;
   text-align: left;
   margin: 175px 0 0 0;
-  padding-bottom: 80px
+  padding-bottom: 80px;
+
+  @media(max-width: 1050px){  
+    flex-wrap: wrap;
+  }
+`
+const Summary = styled.section`
+  height: 940px;
+  width: 500px;
+  background-color: rgba(20,20,20,.1);
+  border-radius: 8px;
+  padding: 60px 60px 0 60px;
+
+  @media(max-width: 1050px){  
+    width: 800px;
+    text-align: center;
+  }
+  @media(max-width: 930px){  
+    width: 500px;
+    text-align: center;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
+  
 `
 const Header = styled.h1`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 36px;
   letter-spacing: 5px;
+
+  @media(max-width: 1050px){ 
+    font-size: 48px;
+  }
+  @media(max-width: 697px){    
+    font-size: 28px;
+  }
 `
 const Divider = styled.hr`
   width: 400px;
-  margin: 18px 0px
+  margin: 18px 0px;
+
+  @media(max-width: 1050px){    
+    width: 800px;
+  }
+  @media(max-width: 930px){ 
+    width: 500px;
+  }
+  @media(max-width: 697px){ 
+    width: 300px;
+  }
 `
 const Table = styled.table`
-  width: 400px
+  width: 400px;
+
+  @media(max-width: 1050px){ 
+    width: 800px;  
+    text-align: left;
+  }
+  @media(max-width: 930px){ 
+    width: 500px;  
+    text-align: left;
+  }
+  @media(max-width: 697px){    
+    width: 300px;  
+    text-align: left;
+  }
 `
 const Record = styled.tr`
   line-height: 2.25
@@ -31,43 +85,78 @@ const Record = styled.tr`
 const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
+
+  @media(max-width: 1050px){    
+    font-size: 25px;
+    line-height: 2;
+  }
+  @media(max-width: 697px){    
+    font-size: 18px;
+    line-height: 2;
+  }
 `
 const Numbers = styled.td`
   font-family: sans-serif;
   font-size: 18px;
   line-height: 2;
-  text-align: right
+  text-align: right;
+
+  @media(max-width: 1050px){    
+    font-size: 25px;
+    line-height: 2;
+  }
+  @media(max-width: 697px){    
+    font-size: 18px;
+    line-height: 2;
+  }
 `
 const CountryLink = styled(Link)`
   text-decoration: none;
-  color: black
-`
-const Country = styled.h2`
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  letter-spacing: 5px;
-  color: rgb(60,60,155)
-`
-const Summary = styled.section`
-  height: 940px;
-  width: 500px;
-  background-color: rgba(20,20,20,.1);
-  border-radius: 8px;
-  padding: 60px 60px 0 60px
-`
-const SideImage = styled.aside`
-  height: 1000px;
-  width: 620px;
-  // box-shadow: -5px 10px 20px rgb(20,20,20);
-  border-radius: 8px
+  color: black;
 `
 const CountryList = styled.section`
   overflow: auto;
   height: 615px;
   background-color: rgba(10,10,10,.1);
   padding-left: 15px;
-  // margin-right: 100px
+
+  @media(max-width: 1050px){    
+    height: 550px;
+  }
 `
+const Country = styled.h2`
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: rgb(60,60,155);
+
+  @media(max-width: 1050px){    
+    font-size: 25px;
+    line-height: 3;
+  }
+`
+const DividerTwo = styled.hr`
+  @media(max-width: 930px){ 
+    width: 200px;
+  }
+`
+const SideImage = styled.aside`
+  height: 1000px;
+  width: 620px;
+  border-radius: 8px;
+
+  @media(max-width: 1050px){    
+    width: 900px;
+    margin: 20px;
+  }
+  @media(max-width: 697px){    
+    height: 500px;
+    width: 300px;
+
+  }
+  
+`
+
 
 function Region({regions}) {
   
@@ -138,6 +227,7 @@ function Region({regions}) {
                 <CountryLink to= {`/country/${c.name}`}>
                   <Country>{c.name}</Country>
                 </CountryLink>
+                <DividerTwo/>
               </div>
             )}
           </CountryList>
