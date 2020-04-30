@@ -105,6 +105,10 @@ const Flag = styled.img`
   width: 500px;
   border: grey solid 2px;
 
+  &:hover{
+    box-shadow: 5px 10px 40px grey;
+    opacity: .9
+  }
   @media(max-width: 1050px){    
     width: 800px;
   }
@@ -138,11 +142,13 @@ const RegionLink = styled(Link)`
 
 function Country({regions}) {
 
-  
-  const {countryName} = useParams()
+
+
+  const { countryName } = useParams()
+
   let countryData = regions.filter(r => r.name === countryName)
   let country = countryData[0]
-  console.log(country)
+
 
 
   return (
