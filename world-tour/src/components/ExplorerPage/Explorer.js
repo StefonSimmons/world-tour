@@ -52,6 +52,7 @@ const RegionContainer = styled.div`
   height: 300px;
   width: 1000px;
 
+
   @media(max-width: 1000px){   
     height: 300px;
     width: 860px;

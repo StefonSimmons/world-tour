@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup'
+// import renderer from 'react-test-renderer'
+// import 'jest-styled-components'
 
 const Main = styled.main`
   justify-content: center;
@@ -86,6 +88,10 @@ const Divider = styled.hr`
     margin-bottom: 60px;
   }
 `
+// test('it works', () => {
+//   const tree = renderer.create(<Main />).toJSON()
+//   expect(tree).toMatchSnapshot()
+// })
 
 function Home({totalCountries, totalArea, totalPopulation}) {
   return (
