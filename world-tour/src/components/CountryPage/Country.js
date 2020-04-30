@@ -15,7 +15,7 @@ const Summary = styled.section`
   width: 500px;
   background-color: rgba(20,20,20,.1);
   box-shadow: 5px 10px 20px rgb(20,20,20);
-  padding: 40px 0 40px 100px;
+  padding: 40px;
   margin-bottom: 50px
 `
 const Header = styled.h1`
@@ -29,11 +29,11 @@ const NativeName = styled.i`
   letter-spacing: 5px;
 `
 const Divider = styled.hr`
-  width: 450px;
+  width: 500px;
   margin: 18px 0px
 `
 const Table = styled.table`
-  width: 450px
+  width: 500px
 `
 const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
@@ -50,7 +50,12 @@ const Flag = styled.img`
   width: 600px;
   border: grey solid 2px
 `
-
+const Return = styled.button`
+  font-size: 18px;
+  border: solid 1px rgba(20,20,20,.2);
+  border-radius: 15px;
+  background-color: rgba(60,60,155,.1)
+`
 
 function Country({regions}) {
 
@@ -60,11 +65,12 @@ function Country({regions}) {
   let country = countryData[0]
 
 
+
   return (
     <div>
-        {console.log('in rtrn before native',country)}
       <Main>
         <Summary>
+          <Return>{`${`⬅`} ${country.region}`}</Return>
           <Header>{countryName}</Header>
           <NativeName>( {country.nativeName} )</NativeName>
           <Divider/>

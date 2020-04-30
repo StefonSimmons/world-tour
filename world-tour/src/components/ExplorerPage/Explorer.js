@@ -69,13 +69,16 @@ const Region = styled.h2`
 
 function Explorer({ uniqueRegions, countries }) {
   
-  const [randoCountry, updateCountry] = useState('--?--')
+  const [country, updateCountry] = useState('--?--')
+  const [clickable, updateClickable] = useState(false)
 
   function handleRandomBtn(e) {
     const countryCount = countries.length
     const randomNumber = Math.floor(Math.random() * countryCount)
-    const randomCountry = countries.filter((country,i) => countries.indexOf(country) === randomNumber)
-
+    const randomCountry = countries.filter((country, i) => countries.indexOf(country) === randomNumber)
+    console.log(clickable)
+    
+    updateClickable(!clickable)
     updateCountry(randomCountry)
     // console.log(randomCountry)
   }
@@ -88,8 +91,8 @@ function Explorer({ uniqueRegions, countries }) {
           <RandoBtn onClick= {(e) => handleRandomBtn()}>Visit a Random Country</RandoBtn>
           
           <RandoBox>
-            <CountryLink to={`/country/${randoCountry}`}>
-              <RandoCountry>{randoCountry}</RandoCountry>
+            <CountryLink to={`/country/${country}`} style={clickable ? { pointerEvents: "" } : { pointerEvents: "none" }}>
+              <RandoCountry>{country}</RandoCountry>
             </CountryLink>
           </RandoBox>
           
@@ -98,8 +101,9 @@ function Explorer({ uniqueRegions, countries }) {
           {/* A map loop for regions here. Include a className so I can style the region names with a background image*/}
           {uniqueRegions.map((region, id) => 
             <RegionContainer className={region} key={id}>
-              <RegionLink to={`/region/${region}`}>
-                <Region>{region}</Region>
+              <RegionLink to={`/region/${region}`}><Region>
+                  {region}
+                </Region>
               </RegionLink>
             </RegionContainer>
           )} 
@@ -110,5 +114,5 @@ function Explorer({ uniqueRegions, countries }) {
     </div>
   )
 }
-
+// style={clickable ? { pointerEvents: "" } : { pointerEvents: "none" }}
 export default Explorer
