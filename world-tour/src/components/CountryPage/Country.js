@@ -66,7 +66,7 @@ function Country({regions}) {
   const {countryName} = useParams()
   let countryData = regions.filter(r => r.name === countryName)
   let country = countryData[0]
-
+  console.log(country)
 
 
   return (
@@ -119,7 +119,13 @@ function Country({regions}) {
           </Table>
           <Divider />
         </Summary>
-          <Flag src={country.flag} alt={countryName} />
+        <a
+          href={`https://www.google.com/maps/place/${countryName}/@${country.latlng[0]},${country.latlng[1]},6z/`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Flag src={country.flag} alt={countryName}/>
+        </a>  
       </Main>
     </div>
   )

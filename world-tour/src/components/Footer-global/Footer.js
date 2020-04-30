@@ -7,6 +7,7 @@ const Foot = styled.footer`
   width: 100%;
   height: 1vh;
   text-align: center;
+  opacity: .9
 `
 const Bottom = styled.div`
   background-color: rgb(28,28,28);

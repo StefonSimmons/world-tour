@@ -11,6 +11,7 @@ const AppHeader = styled.header`
   justify-content: flex-end;
   background-color: #282c34;
   position: relative;
+  opacity: .9
 `
 const NavBar = styled.nav`
   height: 80px;

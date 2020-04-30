@@ -69,7 +69,6 @@ function Region({regions}) {
   const { regionName } = useParams()
   // This gets me all countries data specific to the region clicked from explorer
   const countries = regions.filter(r => r.region === regionName)
-    console.log(countries)
 
   function totalPopulation() {
     const populationArray = countries.map((c) => c.population)
