@@ -1,8 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup'
-// import renderer from 'react-test-renderer'
-// import 'jest-styled-components'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
+
+test('Home component renders', () => {
+  const HomeComponent = renderer.create(<Home/>).toJSON()
+  expect(HomeComponent).toMatchSnapshot()
+})
 
 const Main = styled.main`
   justify-content: center;
@@ -88,10 +93,7 @@ const Divider = styled.hr`
     margin-bottom: 60px;
   }
 `
-// test('it works', () => {
-//   const tree = renderer.create(<Main />).toJSON()
-//   expect(tree).toMatchSnapshot()
-// })
+
 
 function Home({totalCountries, totalArea, totalPopulation}) {
   return (
@@ -115,7 +117,7 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Header>Area of Land (mi<sup>2</sup>)</Header>
           <Numbers>
             <CountUp
-              start={30000000}
+              start={50000000}
               end={totalArea}
               duration={60}
               separator=","

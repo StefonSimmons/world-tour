@@ -5,6 +5,13 @@ import hamburger from '../../images/hamburger.png'
 import logo from '../../images/logoWT.png'
 import styled, {keyframes} from 'styled-components'
 
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
+
+test('Header component renders', () => {
+  const HeaderComponent = renderer.create(<Header/>).toJSON()
+  expect(HeaderComponent).toMatchSnapshot()
+})
 
 const AppHeader = styled.header`
   display: flex;

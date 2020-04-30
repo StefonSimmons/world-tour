@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 import './Explorer.css'
 import styled from 'styled-components'
 
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
+
+test('Explorer component renders', () => {
+  const ExplorerComponent = renderer.create(<Explorer/>).toJSON()
+  expect(ExplorerComponent).toMatchSnapshot()
+})
+
 const Main = styled.main`
   justify-content: center;
   text-align: center;

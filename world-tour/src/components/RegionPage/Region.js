@@ -4,7 +4,13 @@ import {useParams} from "react-router-dom"
 import CountUp from 'react-countup'
 import './Region.css'
 import styled from 'styled-components'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
 
+test('Region component renders', () => {
+  const RegionComponent = renderer.create(<Region/>).toJSON()
+  expect(RegionComponent).toMatchSnapshot()
+})
 
 const Main = styled.main`
   display: flex;

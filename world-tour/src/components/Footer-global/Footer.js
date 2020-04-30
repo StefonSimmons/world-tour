@@ -1,5 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
+
+test('Footer component renders', () => {
+  const FooterComponent = renderer.create(<Footer/>).toJSON()
+  expect(FooterComponent).toMatchSnapshot()
+})
 
 const Foot = styled.footer`
   position: absolute;
