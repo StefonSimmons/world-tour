@@ -40,7 +40,9 @@ Mobile View (via whimsical.com)
 |:------------:| :--------------:   | :----------------------------------------- |
 |    Library   |   Styled Components| Allows me to write CSS directly in my component files for semantic tags that carry style.|
 |    Library   |   React Router     | Used to navigate through pages in the app  |
-|    Library |   React Count-up   | Used for number animation  (https://github.com/glennreyes/react-countup)      |
+|    Library   |   React Test Renderer| Allows me to render React components to JSON format for testing |
+|    Library   |   Jest Styled Components | For snapshot testing. A set of utilities for testing Styled Components with Jest |
+|    Library   |   React Count-up   | Used for number animation  (https://github.com/glennreyes/react-countup)      |
 
 
 ### REST Countries API 
@@ -134,25 +136,21 @@ API SNIPPET
 
 ### Component Breakdown
 
-> 
-
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|     App      | class      |   y   |   n   | Holds all the Routes also hols the api call                     |
-|  Header/Nav  | functional |   y   |   n   | Links to the Home, About, Contact, and 'Explorer' Components    |
-|     Home     | functional |   n   |   y   | takes total sum data from API for all countries                 |
+|     App      | functional |   y   |   n   | Holds all the Routes also holds the api call.                    |
+|  Header/Nav  | functional |   y   |   n   | Links to the Home, About, Contact, and 'Explorer' components    |
+|     Home     | functional |   n   |   y   | takes total sum data from API for all countries/regions           |
 |     About    | functional |   n   |   n   | Static page with overview of the app                            |
 |    Contact   | functional |   n   |   n   | Static page with contact information (i.e. email, github)       |
-| Explorer pg. | functional |   y   |   y   | Static page of mapped regions                                   |
-|  Region pg.  | class      |   y   |   y   | Dynamic pg. showing different regions ex.("/region/Americas")   |
-| Countries pg.| class      |   y   |   y   | Dynamic pg. showing different countries ex.("/country/Canada")  |
+| Explorer pg. | functional |   y   |   y   | List of unique regions  and houses a random country generator   |
+|  Region pg.  | functional |   n   |   y   | Dynamic pg. showing region selected by the user ex.("/region/Americas")   |
+| Countries pg.| functional |   n   |   y   | Dynamic pg. showing country selected by the user ex.("/country/Canada")  |
 
 
-### Component Time Estimates
+### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+> Time necessary to build the application: 
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -162,20 +160,12 @@ API SNIPPET
 | Home                |    L     |     4 hrs      |      2 hrs    |      2h      |
 | About               |    L     |     2 hrs      |      10 mins  |      10m     |
 | Contact             |    L     |     2 hrs      |      10 mins  |      10m     |
-| Explorer pg.        |    H     |     6 hrs      |      2.5 hrs  |      -       |
-| Region pg.          |    M     |     6 hrs      |      1 hr     |      1      |
-| Countries pg.       |    H     |     6 hrs      |      4.5 hrs  |      -      |
-| Testing or Storybook|    H     |     3 hrs      |        -      |      -      |
-| Styling/Responsive Design|  L  |     6 hrs      |      13 hrs    |           |
-| TOTAL               |    --    |    44 hrs      |     33.5 hrs |     TBD     |
-
-### Helper Functions
-
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
-
-|  Function  | Description                                |
-| :--------: | :----------------------------------------- |
-| - | - |
+| Explorer pg.        |    H     |     6 hrs      |      2.5 hrs  |      2.5h    |
+| Region pg.          |    M     |     6 hrs      |      1 hr     |      1h      |
+| Countries pg.       |    H     |     6 hrs      |      6 hrs    |      6h      |
+| Testing or Storybook|    H     |     3 hrs      |        6 hrs  |      6h      |
+| Styling/Responsive Design|  L  |     6 hrs      |      13 hrs   |      13h     |
+| TOTAL               |    --    |    44 hrs      |     41 hrs    |     41 hrs   |
 
 ### SWOT Analysis
 
@@ -197,11 +187,35 @@ API SNIPPET
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+>The following descibes a random country generator styled using styled-components.
+>The output box is unclickable until the 'Random button' is clicked. State for clickable is then 'true'
 
-## Code Issues & Resolutions
+```
+  const [country, updateCountry] = useState('--?--')
+  const [clickable, updateClickable] = useState(false)
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+  function handleRandomBtn(e) {
+    const countryCount = countries.length
+    const randomNumber = Math.floor(Math.random() * countryCount)
+    const randomCountry = countries.filter((country, i) => countries.indexOf(country) === randomNumber)
+    
+    updateClickable(true)
+    updateCountry(randomCountry)
+
+/////==== RETURN() ====/////
+
+<RandomSection>
+
+  <RandoBtn onClick= {(e) => handleRandomBtn()}>Visit a Random Country</RandoBtn>
+  
+  <RandoBox>
+    <CountryLink to={`/country/${country}`} style={clickable ? { pointerEvents: "" } : { pointerEvents: "none" }}>
+      <RandoCountry>{country}</RandoCountry>
+    </CountryLink>
+  </RandoBox>
+  
+</RandomSection>
+```
 
 ## Change Log
 

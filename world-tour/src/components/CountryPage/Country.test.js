@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import React from 'react'
-import Country, { Flag, Main, Label}from './Country'
+import { Flag, Main, Label} from './Country'
 
 
 

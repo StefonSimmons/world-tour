@@ -33,15 +33,25 @@ const Header = styled.h1`
 const Paragraph = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  margin: 25px 0;
+  margin: 25px 0 25px 200px;
   letter-spacing: 3px;
-  color: black;
+  color: rgb(60,95,60);
+  text-align: left;
 
   @media(max-width: 865px){   
-    font-size: 15px
+    font-size: 15px;
+  }
+  @media(max-width: 700px){   
+    font-size: 12px;
+    margin: 25px 0 25px 150px;
+  }
+  @media(max-width: 550px){   
+    font-size: 12px;
+    margin: 25px 0 25px 100px;
   }
   @media(max-width: 365px){   
-    font-size: 12px
+    font-size: 12px;
+    margin: 25px 0;
   }
 `
 const Link = styled.a`
@@ -55,9 +65,9 @@ function Contact() {
       <Main>
         <Section>
           <Header>Contact</Header>
-          <Paragraph>Developer | Stefon Simmons</Paragraph>
+          <Paragraph>Developer | <Link href="https://www.linkedin.com/in/stefonsimmons" target='_blank' rel="noopener noreferrer">Stefon Simmons</Link></Paragraph>
           <Paragraph>Email | <Link href="mailto:stefonsimmons1@gmail.com">stefonsimmons1@gmail.com</Link></Paragraph>
-          <Paragraph>GitHub | <Link href="http://github.com/StefonSimmons/">github.com/StefonSimmons</Link></Paragraph>
+          <Paragraph>GitHub | <Link href="http://github.com/StefonSimmons/" target='_blank' rel="noopener noreferrer">github.com/StefonSimmons</Link></Paragraph>
         </Section>
       </Main>
     </div>

@@ -11,7 +11,7 @@ const Main = styled.main`
   margin: 250px 0 100px 0;
 `
 const Section = styled.section`
-  width: 900px;
+  width: 1000px;
   border-radius: 360px; 
   background-color: rgb(183,176,159);
   
@@ -24,7 +24,7 @@ const AboutSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 70px;
+  padding: 0px 100px;
 `
 const DataSection = styled(AboutSection)`
   margin: 15px 0 30px 0
@@ -48,17 +48,17 @@ const Paragraph = styled.p`
   font-size: 21px;
   text-align: left;
   margin: 15px 0;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   line-height: 1.6;
   color: rgb(60,95,60);
 
   @media(max-width: 867px){   
     font-size: 15px;
     letter-spacing: 1px;
-
   }
   @media(max-width: 365px){   
-    font-size: 15px
+    font-size: 15px;
+    text-align: center;
   }
 `
 const Link = styled.a`
@@ -78,7 +78,13 @@ function About() {
 
           <DataSection>
             <Header>Data & Tech</Header>
-            <Paragraph>This application is written in React.js and pulls data from the RESTful API at <Link href="https://restcountries.eu/">https://restcountries.eu/</Link></Paragraph>
+            <Paragraph>This application is written in React.js and pulls data from the RESTful API at <Link href="https://restcountries.eu/" target='_blank' rel="noopener noreferrer">restcountries.eu</Link></Paragraph>
+          </DataSection>
+
+          <DataSection>
+            <Header>Logo & Images</Header>
+            <Paragraph>Logo: Create on <Link href="https://www.freelogodesign.org/" target='_blank' rel="noopener noreferrer">freelogodesign</Link></Paragraph>
+            <Paragraph>Images: searched by region name on <Link href="https://unsplash.com/" target='_blank' rel="noopener noreferrer">Unsplash</Link></Paragraph>
           </DataSection>
         </Section>
       </Main>

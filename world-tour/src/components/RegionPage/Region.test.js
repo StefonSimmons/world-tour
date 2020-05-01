@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import React from 'react'
-import Region, { Table, CountryList, Country }from './Region'
+import { Table, CountryList, Country }from './Region'
 
 test('Region_Table component renders', () => {
   const TableComponent = renderer.create(<Table/>).toJSON()

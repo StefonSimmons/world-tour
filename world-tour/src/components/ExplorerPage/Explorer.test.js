@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 import React from 'react'
-import Explorer, {RegionContainer, RandoBox, RandoBtn, RandoCountry} from './Explorer'
+import {RegionContainer, RandoBox, RandoBtn, RandoCountry} from './Explorer'
 
 test('Explorer_RegionContainer component renders', () => {
   const RegionCointainerComponent = renderer.create(<RegionContainer/>).toJSON()

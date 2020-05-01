@@ -221,7 +221,7 @@ function Region({regions}) {
             </tbody>
           </Table>
           <Divider/>
-          {/* Need to setup a map loop for regions here*/}
+          {/* map loop for countries here*/}
           <CountryList>
             {countries.map((c, id) => 
               <div key= {id}>
@@ -233,8 +233,8 @@ function Region({regions}) {
             )}
           </CountryList>
         </Summary>
-        <SideImage className={`${regionName}Region`}>
-        </SideImage>
+        {/* using className to add background image of region*/}
+        <SideImage className={`${regionName}Region`}></SideImage>
       </Main>
     </div>
   )

@@ -96,7 +96,6 @@ function Explorer({ uniqueRegions, countries }) {
     const countryCount = countries.length
     const randomNumber = Math.floor(Math.random() * countryCount)
     const randomCountry = countries.filter((country, i) => countries.indexOf(country) === randomNumber)
-    console.log(clickable)
     
     updateClickable(true)
     updateCountry(randomCountry)
