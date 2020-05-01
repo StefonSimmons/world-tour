@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams, Link} from 'react-router-dom'
+import { useParams, Link, useHistory } from 'react-router-dom'
 import CountUp from 'react-countup'
 import styled from 'styled-components'
 
@@ -144,13 +144,20 @@ const RegionLink = styled(Link)`
 function Country({regions}) {
 
 
-
+  let history = useHistory();
   const { countryName } = useParams()
 
   let countryData = regions.filter(r => r.name === countryName)
   let country = countryData[0]
 
+  function redirect() {
+    if (country === undefined) {
+      history.push('/explorer')
+      window.location.reload()
+    }
+  }
 
+  redirect()
 
   return (
     <div>

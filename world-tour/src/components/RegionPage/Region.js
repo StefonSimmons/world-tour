@@ -163,6 +163,7 @@ function Region({regions}) {
   // useParams will read whatever :variable is set on the Region for this component and create a unique location.
   // useParams will read the to=value of the Link for this component and create a unique link (url or path name)
   const { regionName } = useParams()
+
   // This gets me all countries data specific to the region clicked from explorer
   const countries = regions.filter(r => r.region === regionName)
 
