@@ -60,16 +60,10 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Header />
-      {/* {console.log(totalArea())}
-      {console.log(totalPopulation())}
-      {console.log(regions[1])}
-      {console.log(listRegions())} */}
-      {/* {console.log(listCountries())} */}
       
       <Switch>
-
         <Route path="/" exact>
             <Home
               totalCountries={regions.length}
@@ -104,10 +98,9 @@ function App() {
             regions= {regions}
           />
         </Route>
-
       </Switch>
       <Footer/>
-    </div>
+    </>
   );
 }
 

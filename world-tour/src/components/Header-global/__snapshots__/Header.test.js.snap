@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header_AppHeader component renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #282c34;
+  opacity: .85;
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`Header_Earth component renders 1`] = `
+.c0 {
+  position: absolute;
+  height: 170px;
+  border-radius: 360px;
+  box-shadow: 5px 10px 20px #F4D35E;
+  cursor: pointer;
+  -webkit-animation: fvtopB infinite 50s linear;
+  animation: fvtopB infinite 50s linear;
+}
+
+.c0:hover {
+  box-shadow: 5px 10px 40px #F4D35E;
+}
+
+@media (max-width:861px) {
+  .c0 {
+    height: 150px;
+    right: 41vw;
+  }
+}
+
+@media (max-width:730px) {
+  .c0 {
+    right: 39vw;
+  }
+}
+
+@media (max-width:650px) {
+  .c0 {
+    right: 37vw;
+  }
+}
+
+@media (max-width:500px) {
+  .c0 {
+    right: 35vw;
+  }
+}
+
+@media (max-width:470px) {
+  .c0 {
+    right: 32vw;
+  }
+}
+
+@media (max-width:415px) {
+  .c0 {
+    right: 30vw;
+  }
+}
+
+@media (max-width:365px) {
+  .c0 {
+    top: 22vw;
+    right: 30vw;
+    box-shadow: 5px 10px 30px #F4D35E;
+  }
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`Header_Hamburger component renders 1`] = `
+.c0 {
+  display: none;
+}
+
+@media (max-width:861px) {
+  .c0 {
+    display: inline-block;
+    width: 40px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:365px) {
+  .c0 {
+    width: 15px;
+  }
+}
+
+<img
+  className="c0"
+/>
+`;

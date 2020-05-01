@@ -17,7 +17,7 @@ const RandomSection = styled.section`
   align-items: center;
 `
 
-const RandoBtn = styled.button`
+export const RandoBtn = styled.button`
   margin: 15px 0px;
   height: 35px;
   background-color: rgb(17,124,158);
@@ -26,7 +26,7 @@ const RandoBtn = styled.button`
   font-size: 18px;
   cursor: pointer
 `
-const RandoBox = styled.div`
+export const RandoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ const RandoBox = styled.div`
   border: blue dotted 2px;
   background-color: rgba(17,124,158,.2)
 `
-const RandoCountry = styled.h5`
+export const RandoCountry = styled.h5`
   font-family: 'Montserrat', sans-serif;
   font-size: 18px
 `
@@ -46,7 +46,7 @@ const CountryLink = styled(Link)`
 const RegionSection = styled(RandomSection)`
   margin: 50px 0
 `
-const RegionContainer = styled.div`
+export const RegionContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

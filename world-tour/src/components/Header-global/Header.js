@@ -7,7 +7,7 @@ import styled, {keyframes} from 'styled-components'
 
 
 
-const AppHeader = styled.header`
+export const AppHeader = styled.header`
   display: flex;
   justify-content: space-between;
   background-color: #282c34;
@@ -46,7 +46,7 @@ const EarthSpin = keyframes`
     transform: rotate(360deg);
   }
 `
-const Earth = styled.img`
+export const Earth = styled.img`
   position: absolute;
   height: 170px;
   // align-self: center;
@@ -100,7 +100,7 @@ const Wrapper = styled.ul`
     padding-top: 5px;
   }
 `
-const Hamburger= styled.img`
+export const Hamburger= styled.img`
   display: none;
 
   @media(max-width: 861px){
@@ -172,7 +172,7 @@ function Header() {
 
         <NavBar>
           <Wrapper>
-            <Hamburger src={hamburger} alt="hamburger menu" onClick={(e) => updateOpen(!open)}/>
+            <Hamburger src={hamburger} id= "hamburger" alt="hamburger menu" onClick={(e) => updateOpen(!open)}/>
             
             <MenuItemContainer style={open ? { display: "block" } : { display: "" }}>
               <MenuLink to='/' style={open ? { display:"block" }: {display:""}}>

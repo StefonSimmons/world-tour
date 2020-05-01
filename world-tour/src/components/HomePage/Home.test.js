@@ -7,3 +7,4 @@ test('Home component renders', () => {
   const HomeComponent = renderer.create(<Home/>).toJSON()
   expect(HomeComponent).toMatchSnapshot()
 })
+

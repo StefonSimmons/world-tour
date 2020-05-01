@@ -4,7 +4,7 @@ import CountUp from 'react-countup'
 import styled from 'styled-components'
 
 
-const Main = styled.main`
+export const Main = styled.main`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -76,7 +76,7 @@ const Table = styled.table`
     width: 300px;
   }
 `
-const Label = styled.td`
+export const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   line-height: 2;
@@ -102,7 +102,7 @@ const Details = styled.td`
     font-size: 18px;
   }
 `
-const Flag = styled.img`
+export const Flag = styled.img`
   width: 500px;
   border: grey solid 2px;
 

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country_Flag component renders 1`] = `
+.c0 {
+  width: 500px;
+  border: grey solid 2px;
+}
+
+.c0:hover {
+  box-shadow: 5px 10px 40px grey;
+  opacity: .9;
+}
+
+@media (max-width:1050px) {
+  .c0 {
+    width: 800px;
+  }
+}
+
+@media (max-width:900px) {
+  .c0 {
+    width: 500px;
+  }
+}
+
+@media (max-width:697px) {
+  .c0 {
+    width: 300px;
+  }
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`Country_Label component renders 1`] = `
+.c0 {
+  font-family: 'Nunito Sans',sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+@media (max-width:1050px) {
+  .c0 {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+@media (max-width:697px) {
+  .c0 {
+    font-size: 18px;
+  }
+}
+
+<td
+  className="c0"
+/>
+`;
+
+exports[`Country_Main component renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  margin: 250px 0 0 0;
+  padding-bottom: 80px;
+}
+
+<main
+  className="c0"
+/>
+`;

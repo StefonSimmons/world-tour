@@ -63,7 +63,7 @@ const Divider = styled.hr`
     width: 300px;
   }
 `
-const Table = styled.table`
+export const Table = styled.table`
   width: 400px;
 
   @media(max-width: 1050px){ 
@@ -114,7 +114,7 @@ const CountryLink = styled(Link)`
   text-decoration: none;
   color: black;
 `
-const CountryList = styled.section`
+export const CountryList = styled.section`
   overflow: auto;
   height: 615px;
   background-color: rgba(10,10,10,.1);
@@ -124,7 +124,7 @@ const CountryList = styled.section`
     height: 550px;
   }
 `
-const Country = styled.h2`
+export const Country = styled.h2`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   letter-spacing: 5px;
