@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders 1`] = `
+.c0 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: .1vh;
+  text-align: center;
+  opacity: .9;
+}
+
+.c1 {
+  background-color: rgb(28,28,28);
+  padding: 1px 0;
+}
+
+.c2 {
+  font-family: 'Merriweather Sans',sans-serif;
+  font-size: 16px;
+  color: #DAE2DF;
+}
+
+<div>
+  <footer
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      <h6
+        className="c2"
+      >
+        © Stefon Simmons
+      </h6>
+    </div>
+  </footer>
+</div>
+`;

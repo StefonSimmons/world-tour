@@ -1,13 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
-
-test('Contact component renders', () => {
-  const ContactComponent = renderer.create(<Contact/>).toJSON()
-  expect(ContactComponent).toMatchSnapshot()
-})
 
 const Main = styled.main`
   display: flex;

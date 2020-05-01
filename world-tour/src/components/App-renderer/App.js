@@ -10,13 +10,6 @@ import Country from '../CountryPage/Country'
 import Footer from '../Footer-global/Footer'
 import {Route, Switch} from 'react-router-dom'
 
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
-
-test('App component renders', () => {
-  const AppComponent = renderer.create(<App/>).toJSON()
-  expect(AppComponent).toMatchSnapshot()
-}) 
 
 function App() {
 

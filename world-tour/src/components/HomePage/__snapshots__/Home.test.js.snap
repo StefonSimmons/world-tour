@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders 1`] = `
+.c0 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 250px 0 0 0;
+  padding-bottom: 5rem;
+}
+
+.c2 {
+  color: #403F4C;
+}
+
+.c1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 45px;
+  color: #282c34;
+}
+
+.c5 {
+  margin-bottom: 0px;
+  font-family: 'Manrope',sans-serif;
+  font-size: 30px;
+  -webkit-letter-spacing: 10px;
+  -moz-letter-spacing: 10px;
+  -ms-letter-spacing: 10px;
+  letter-spacing: 10px;
+  color: rgb(16,23,100);
+}
+
+.c6 {
+  margin: 5px 0 50px 0;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 24px;
+  -webkit-letter-spacing: 20px;
+  -moz-letter-spacing: 20px;
+  -ms-letter-spacing: 20px;
+  letter-spacing: 20px;
+}
+
+.c3 {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 90px;
+  color: #282c34;
+}
+
+.c4 {
+  width: 500px;
+  margin-bottom: 80px;
+  height: 1px;
+  background-color: #1B2432;
+}
+
+@media (max-width:861px) {
+  .c1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width:659px) {
+  .c1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width:365px) {
+  .c1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:861px) {
+  .c5 {
+    font-size: 24px;
+    -webkit-letter-spacing: 7px;
+    -moz-letter-spacing: 7px;
+    -ms-letter-spacing: 7px;
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width:659px) {
+  .c5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:365px) {
+  .c5 {
+    font-size: 15px;
+    -webkit-letter-spacing: 7px;
+    -moz-letter-spacing: 7px;
+    -ms-letter-spacing: 7px;
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width:659px) {
+  .c6 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:365px) {
+  .c6 {
+    font-size: 15px;
+    -webkit-letter-spacing: 15px;
+    -moz-letter-spacing: 15px;
+    -ms-letter-spacing: 15px;
+    letter-spacing: 15px;
+  }
+}
+
+@media (max-width:659px) {
+  .c3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width:365px) {
+  .c3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:659px) {
+  .c4 {
+    width: 400px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width:365px) {
+  .c4 {
+    width: 250px;
+    margin-bottom: 60px;
+  }
+}
+
+<main
+  className="c0"
+>
+  <section>
+    <h1
+      className="c1"
+    >
+      <span
+        className="c2"
+      >
+        Welcome Home
+      </span>
+       
+      <span
+        className="c3"
+      >
+        |
+      </span>
+       3rd-Star Explorer
+    </h1>
+    <hr
+      className="c4"
+    />
+    <h2
+      className="c5"
+    >
+      Population on Earth
+    </h2>
+    <p
+      className="c6"
+    >
+      <span />
+    </p>
+    <h2
+      className="c5"
+    >
+      Area of Land (mi
+      <sup>
+        2
+      </sup>
+      )
+    </h2>
+    <p
+      className="c6"
+    >
+      <span />
+    </p>
+    <h2
+      className="c5"
+    >
+      Recorded Regions
+    </h2>
+    <p
+      className="c6"
+    >
+      <span />
+    </p>
+  </section>
+</main>
+`;

@@ -1,13 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
 
-test('About component renders', () => {
-  const AboutComponent = renderer.create(<About/>).toJSON()
-  expect(AboutComponent).toMatchSnapshot()
-})
 
 
 const Main = styled.main`

@@ -1,30 +1,30 @@
 .AsiaRegion{
-  background-image: url("../../images/RegionRegions/AsiaRegion.jpg");
+  background-image: url("../../images/RegionImgs/AsiaRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .AfricaRegion{
-  background-image: url("../../images/RegionRegions/AfricaRegion.jpg");
+  background-image: url("../../images/RegionImgs/AfricaRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .EuropeRegion{
-  background-image: url("../../images/RegionRegions/EuropeRegion.jpg");
+  background-image: url("../../images/RegionImgs/EuropeRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .AmericasRegion{
-  background-image: url("../../images/RegionRegions/AmericasRegion.jpg");
+  background-image: url("../../images/RegionImgs/AmericasRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .PolarRegion{
-  background-image: url("../../images/RegionRegions/PolarRegion.jpg");
+  background-image: url("../../images/RegionImgs/PolarRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .OceaniaRegion{
-  background-image: url("../../images/RegionRegions/OceaniaRegion.jpg");
+  background-image: url("../../images/RegionImgs/OceaniaRegion.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,13 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import CountUp from 'react-countup'
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
-
-test('Home component renders', () => {
-  const HomeComponent = renderer.create(<Home/>).toJSON()
-  expect(HomeComponent).toMatchSnapshot()
-})
 
 const Main = styled.main`
   justify-content: center;
@@ -107,9 +100,9 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Header>Population on Earth</Header>
           <Numbers>
             <CountUp
-              start={7340000000}
+              start={7349100000}
               end={totalPopulation}
-              duration={60}
+              duration={30}
               separator=","
             />
           </Numbers>
@@ -117,9 +110,9 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Header>Area of Land (mi<sup>2</sup>)</Header>
           <Numbers>
             <CountUp
-              start={50000000}
+              start={58000000}
               end={totalArea}
-              duration={60}
+              duration={30}
               separator=","
             />
           </Numbers>
@@ -128,8 +121,7 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Numbers>
             <CountUp
               end={totalCountries}
-              duration={60}
-              separator=","
+              duration={30}
             />
             
           </Numbers>

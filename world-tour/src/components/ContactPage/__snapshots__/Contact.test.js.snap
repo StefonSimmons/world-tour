@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 225px 0;
+}
+
+.c1 {
+  width: 900px;
+  border-radius: 360px;
+  background-color: rgb(183,176,159);
+  padding: 30px;
+}
+
+.c2 {
+  font-family: 'Manrope',sans-serif;
+  font-size: 32px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin: 25px 0 0 0;
+  color: rgb(16,23,130);
+}
+
+.c3 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 24px;
+  margin: 25px 0;
+  -webkit-letter-spacing: 3px;
+  -moz-letter-spacing: 3px;
+  -ms-letter-spacing: 3px;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.c4 {
+  color: black;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (max-width:365px) {
+  .c2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width:365px) {
+  .c2 {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width:865px) {
+  .c3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:365px) {
+  .c3 {
+    font-size: 12px;
+  }
+}
+
+<div>
+  <main
+    className="c0"
+  >
+    <section
+      className="c1"
+    >
+      <h1
+        className="c2"
+      >
+        Contact
+      </h1>
+      <p
+        className="c3"
+      >
+        Developer | Stefon Simmons
+      </p>
+      <p
+        className="c3"
+      >
+        Email | 
+        <a
+          className="c4"
+          href="mailto:stefonsimmons1@gmail.com"
+        >
+          stefonsimmons1@gmail.com
+        </a>
+      </p>
+      <p
+        className="c3"
+      >
+        GitHub | 
+        <a
+          className="c4"
+          href="http://github.com/StefonSimmons/"
+        >
+          github.com/StefonSimmons
+        </a>
+      </p>
+    </section>
+  </main>
+</div>
+`;

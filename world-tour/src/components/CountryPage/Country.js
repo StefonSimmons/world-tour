@@ -3,13 +3,6 @@ import {useParams, Link} from 'react-router-dom'
 import CountUp from 'react-countup'
 import styled from 'styled-components'
 
-import renderer from 'react-test-renderer'
-import 'jest-styled-components'
-
-test('Country component renders', () => {
-  const CountryComponent = renderer.create(<Country/>).toJSON()
-  expect(CountryComponent).toMatchSnapshot()
-})
 
 const Main = styled.main`
   display: flex;

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 250px 0 100px 0;
+}
+
+.c1 {
+  width: 900px;
+  border-radius: 360px;
+  background-color: rgb(183,176,159);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 70px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 70px;
+  margin: 15px 0 30px 0;
+}
+
+.c3 {
+  font-family: 'Manrope',sans-serif;
+  font-size: 32px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin: 25px 0 0 0;
+  color: rgb(16,23,130);
+}
+
+.c4 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 21px;
+  text-align: left;
+  margin: 15px 0;
+  -webkit-letter-spacing: 3px;
+  -moz-letter-spacing: 3px;
+  -ms-letter-spacing: 3px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  color: rgb(60,95,60);
+}
+
+.c6 {
+  color: black;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (max-width:861px) {
+  .c1 {
+    width: 600px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width:867px) {
+  .c3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width:365px) {
+  .c3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width:867px) {
+  .c4 {
+    font-size: 15px;
+    -webkit-letter-spacing: 1px;
+    -moz-letter-spacing: 1px;
+    -ms-letter-spacing: 1px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width:365px) {
+  .c4 {
+    font-size: 15px;
+  }
+}
+
+<div>
+  <main
+    className="c0"
+  >
+    <section
+      className="c1"
+    >
+      <section
+        className="c2"
+      >
+        <h1
+          className="c3"
+        >
+          About
+        </h1>
+        <p
+          className="c4"
+        >
+          "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
+        </p>
+      </section>
+      <section
+        className="c5"
+      >
+        <h1
+          className="c3"
+        >
+          Data & Tech
+        </h1>
+        <p
+          className="c4"
+        >
+          This application is written in React.js and pulls data from the RESTful API at 
+          <a
+            className="c6"
+            href="https://restcountries.eu/"
+          >
+            https://restcountries.eu/
+          </a>
+        </p>
+      </section>
+    </section>
+  </main>
+</div>
+`;
