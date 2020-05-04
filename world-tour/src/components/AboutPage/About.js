@@ -83,8 +83,8 @@ function About() {
 
           <DataSection>
             <Header>Logo & Images</Header>
-            <Paragraph>Logo: Create on <Link href="https://www.freelogodesign.org/" target='_blank' rel="noopener noreferrer">freelogodesign</Link></Paragraph>
-            <Paragraph>Images: searched by region name on <Link href="https://unsplash.com/" target='_blank' rel="noopener noreferrer">Unsplash</Link></Paragraph>
+            <Paragraph>Logo: Created on <Link href="https://www.freelogodesign.org/" target='_blank' rel="noopener noreferrer">freelogodesign</Link></Paragraph>
+            <Paragraph>Images: Searched by region name on <Link href="https://unsplash.com/" target='_blank' rel="noopener noreferrer">Unsplash</Link></Paragraph>
           </DataSection>
         </Section>
       </Main>

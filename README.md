@@ -1,10 +1,11 @@
-https://media.giphy.com/media/glvyCVWYJ21fq/giphy.gif
 
 # World Tour
 Data-driven regional statistics app of the world
 
 ### Description
 "World Tour" allows users to take a satellite journey to both familiar and foreign lands of Earth. You can randomly teleport or get specific in your search for regional data.
+
+Please see the deployed site here: https://worldtourapp.netlify.app/
 
 ### Wireframes
 
