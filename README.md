@@ -1,4 +1,8 @@
 
+
+<img src="https://media.giphy.com/media/DMUFPG2niG1TW/giphy.gif" alt="earth" style= "border-radius: 360px"/>
+
+
 # World Tour
 Data-driven regional statistics app of the world
 
