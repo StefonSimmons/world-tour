@@ -28,3 +28,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.AntarcticRegion{
+  background-image: url("../../images/RegionImgs/AntarcticRegion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Antarctic-OceanRegion{
+  background-image: url("../../images/RegionImgs/Antarctic-OceanRegion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

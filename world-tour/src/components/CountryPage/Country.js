@@ -153,7 +153,7 @@ function Country({regions}) {
   let history = useHistory();
   const { countryName } = useParams()
 
-  let countryData = regions.filter(r => r.name === countryName)
+  let countryData = regions.filter(r => r.name.replaceAll(' ', '-') === countryName)
   let country = countryData[0]
 
 
@@ -170,7 +170,7 @@ function Country({regions}) {
     <div>
       <Main>
         <Summary>
-          <RegionLink to={`/region/${country.region}`}>
+          <RegionLink to={`/region/${country.region.replaceAll(' ', '-')}`}>
             <ReturnBtn>{`${`⬅`} ${country.region}`}</ReturnBtn>
           </RegionLink>
           <Header>{countryName}</Header>

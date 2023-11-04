@@ -74,7 +74,20 @@ export const RegionContainer = styled.div`
 `
 const RegionLink = styled(CountryLink)`
   text-decoration: none;
-  color: black
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: rgba(20,20,20,.4);
+    h2 {
+      font-size: 48px;
+      box-shadow: none;
+      background-color: transparent
+    }
+  }
 `
 const Region = styled.h2`
   font-family: 'Nunito Sans', sans-serif;
@@ -119,8 +132,8 @@ function Explorer({ uniqueRegions, countries }) {
         <RegionSection>
           {/* Includes a className so I can style the region names with a background image*/}
           {uniqueRegions.map((region, id) => 
-            <RegionContainer className={region} key={id}>
-              <RegionLink to={`/region/${region}`}>
+            <RegionContainer className={region.replace(' ', '-')} key={id}>
+              <RegionLink to={`/region/${region.replace(' ', '-')}`}>
                 <Region>
                   {region}
                 </Region>

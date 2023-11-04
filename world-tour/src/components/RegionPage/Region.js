@@ -165,7 +165,7 @@ function Region({regions}) {
   const { regionName } = useParams()
 
   // This gets me all countries data specific to the region clicked from explorer
-  const countries = regions.filter(r => r.region === regionName)
+  const countries = regions.filter(r => r.region.replaceAll(' ', '-') === regionName)
 
   function totalPopulation() {
     const populationArray = countries.map((c) => c.population)
@@ -178,9 +178,10 @@ function Region({regions}) {
   function totalArea() {
     const areaArray = countries.map((c) => c.area)
     const summedArea = areaArray.reduce((sum, curr) => {
-      return sum + curr
+      return curr ? sum + curr : sum
     }, 0)
-    return summedArea
+    let convertArea = (summedArea * 0.386102).toFixed(2)
+    return parseFloat(convertArea)
   }
   
   return (
@@ -225,7 +226,7 @@ function Region({regions}) {
           <CountryList>
             {countries.map((c, id) => 
               <div key= {id}>
-                <CountryLink to= {`/country/${c.name}`}>
+                <CountryLink to= {`/country/${c.name.replaceAll(' ', '-')}`}>
                   <Country>{c.name}</Country>
                 </CountryLink>
                 <DividerTwo/>
@@ -234,7 +235,7 @@ function Region({regions}) {
           </CountryList>
         </Summary>
         {/* using className to add background image of region*/}
-        <SideImage className={`${regionName}Region`}></SideImage>
+        <SideImage className={`${regionName.replaceAll(' ', '-')}Region`}></SideImage>
       </Main>
     </div>
   )
