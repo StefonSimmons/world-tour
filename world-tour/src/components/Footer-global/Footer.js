@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import styled from 'styled-components'
 
 const Foot = styled.footer`
@@ -19,12 +19,19 @@ const Text = styled.h6`
   color: #DAE2DF;
 `
 
+
 function Footer() {
+  const [date, updateDate] = useState()
+  
+  useEffect(() => {
+    updateDate(new Date().getFullYear())
+  }, [])
+  
   return (
     <div>
       <Foot>
         <Bottom>
-          <Text>&copy; Stefon Simmons</Text>
+          <Text>&copy; Stefon Simmons {date}</Text>
         </Bottom>
       </Foot>
     </div>
