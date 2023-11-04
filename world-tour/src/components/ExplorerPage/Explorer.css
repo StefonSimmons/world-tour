@@ -31,3 +31,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.Antarctic-Ocean{
+  background-image: url("../../images/ExplorerImgs/Antarctic-Ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Antarctic{
+  background-image: url("../../images/ExplorerImgs/Antarctic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

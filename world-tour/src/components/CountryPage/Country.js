@@ -80,7 +80,7 @@ export const Label = styled.td`
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px;
   line-height: 2;
-
+  width: 60%;
   @media(max-width: 1050px){    
     font-size: 24px;
     text-align: left
@@ -122,10 +122,11 @@ export const Flag = styled.img`
 `
 const ReturnBtn = styled.button`
   font-size: 18px;
-  border: solid 1px rgba(20,20,20,.2);
   border-radius: 15px;
   background-color: rgba(60,60,155,.1);
   cursor: pointer;
+  color: rgba(20,20,20,.7);
+  transition: all .15s ease-in;
 
   @media(max-width: 1050px){ 
     font-family: 'Nunito Sans', sans-serif;   
@@ -135,6 +136,11 @@ const ReturnBtn = styled.button`
   }
   @media(max-width: 900px){ 
     font-size: 18px;
+  }
+
+  &:hover{
+    border: solid transparent 2px;
+    color: black;
   }
 
 `
@@ -147,8 +153,9 @@ function Country({regions}) {
   let history = useHistory();
   const { countryName } = useParams()
 
-  let countryData = regions.filter(r => r.name === countryName)
+  let countryData = regions.filter(r => r.name.replaceAll(' ', '-') === countryName)
   let country = countryData[0]
+
 
   function redirect() {
     if (country === undefined) {
@@ -163,7 +170,7 @@ function Country({regions}) {
     <div>
       <Main>
         <Summary>
-          <RegionLink to={`/region/${country.region}`}>
+          <RegionLink to={`/region/${country.region.replaceAll(' ', '-')}`}>
             <ReturnBtn>{`${`⬅`} ${country.region}`}</ReturnBtn>
           </RegionLink>
           <Header>{countryName}</Header>
@@ -191,11 +198,20 @@ function Country({regions}) {
               </tr>
               <tr>
                 <Label>Capital:</Label>
-                <Details>{country.capital}</Details>
+                <Details>{country.capital ? country.capital : "N/A"}</Details>
               </tr>
               <tr>
                 <Label>Currency (Symbol):</Label>
-                <Details>{country.currencies[0].code} ({country.currencies[0].symbol})</Details>
+                {
+                  country.currencies ?
+                    <Details>
+                    {country.currencies[0].code} {(country.currencies[0].symbol) }
+                    </Details>
+                    :
+                    <Details>
+                    N/A
+                    </Details>
+                }
               </tr>
               <tr>
                 <Label>Region:</Label>

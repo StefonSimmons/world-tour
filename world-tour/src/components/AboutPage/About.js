@@ -78,7 +78,7 @@ function About() {
 
           <DataSection>
             <Header>Data & Tech</Header>
-            <Paragraph>This application is written in React.js and pulls data from the RESTful API at <Link href="https://restcountries.eu/" target='_blank' rel="noopener noreferrer">restcountries.eu</Link></Paragraph>
+            <Paragraph>This application is written in React.js and pulls data from the RESTful API at <Link href="https://restcountries.com" target='_blank' rel="noopener noreferrer">restcountries.com</Link></Paragraph>
           </DataSection>
 
           <DataSection>

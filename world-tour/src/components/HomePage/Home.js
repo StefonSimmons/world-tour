@@ -111,7 +111,7 @@ function Home({totalCountries, totalArea, totalPopulation}) {
           <Numbers>
             <CountUp
               start={58000000}
-              end={totalArea}
+              end={isNaN(totalArea) ?  1 : totalArea}
               duration={30}
               separator=","
             />
