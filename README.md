@@ -1,7 +1,6 @@
 
 
-<img src="https://media.giphy.com/media/DMUFPG2niG1TW/giphy.gif" alt="earth" style= "border-radius: 360px"/>
-
+<img src="https://media.giphy.com/media/DMUFPG2niG1TW/giphy.gif" alt="earth" style= "border-radius: 9999px"/>
 
 # World Tour
 Data-driven regional statistics app of the world
@@ -54,13 +53,13 @@ Mobile View (via whimsical.com)
 
 > API(s) consumed for 'World Tour', including API snippet.
 
-|Quality Docs? | Website                        | Query                                             |
-|:-----------: | :----------------------------: | :------------------------------------------------:|
-|     yes      | https://restcountries.eu/      | https://restcountries.eu/rest/v2/name/hong%20kong |
+|Quality Docs? | Website                          | Query                                             |
+|:-----------: | :------------------------------: | :------------------------------------------------:|
+|     yes      | https://restcountries.com/v2/all | https://restcountries.com/v2/name/hong%20kongs    |
 
 API SNIPPET
 
-```
+```json
 [
     {
         "name": "Hong Kong",
@@ -77,16 +76,15 @@ API SNIPPET
             "HK",
             "香港"
         ],
-        "region": "Asia",
         "subregion": "Eastern Asia",
-        "population": 7324300,
+        "region": "Asia",
+        "population": 7481800,
         "latlng": [
             22.25,
             114.16666666
         ],
         "demonym": "Chinese",
-        "area": 1104.0,
-        "gini": 53.3,
+        "area": 1104,
         "timezones": [
             "UTC+08:00"
         ],
@@ -95,6 +93,10 @@ API SNIPPET
         ],
         "nativeName": "香港",
         "numericCode": "344",
+        "flags": {
+            "svg": "https://flagcdn.com/hk.svg",
+            "png": "https://flagcdn.com/w320/hk.png"
+        },
         "currencies": [
             {
                 "code": "HKD",
@@ -117,20 +119,21 @@ API SNIPPET
             }
         ],
         "translations": {
+            "br": "Hong Kong",
+            "pt": "Hong Kong",
+            "nl": "Hongkong",
+            "hr": "Hong Kong",
+            "fa": "هنگ‌کنگ",
             "de": "Hong Kong",
             "es": "Hong Kong",
             "fr": "Hong Kong",
             "ja": "香港",
             "it": "Hong Kong",
-            "br": "Hong Kong",
-            "pt": "Hong Kong",
-            "nl": "Hongkong",
-            "hr": "Hong Kong",
-            "fa": "هنگ‌کنگ"
+            "hu": "Hong Kong"
         },
-        "flag": "https://restcountries.eu/data/hkg.svg",
-        "regionalBlocs": [],
-        "cioc": "HKG"
+        "flag": "https://flagcdn.com/hk.svg",
+        "cioc": "HKG",
+        "independent": false
     }
 ]
 ```
