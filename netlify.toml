@@ -1,9 +1,9 @@
 [build]
-  base = /opt/build/repo/world-tour
-  command= npm run build
-  commandOrigin= config
+  base = "/opt/build/repo/world-tour"
+  command= "npm run build"
+  commandOrigin= "config"
   environment= {
     "REVIEW_ID"
   }
-  publish= /opt/build/repo/world-tour/build
-  publishOrigin= config
+  publish= "/opt/build/repo/world-tour/build"
+  publishOrigin= "config"
