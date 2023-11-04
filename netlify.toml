@@ -3,7 +3,7 @@ base = "world-tour"
 command = "npm run build"
 commandOrigin = "config"
 environment = [
-  "REVIEW_ID"
+  REVIEW_ID
 ]
 publish = "world-tour/build"
 publishOrigin = "config"
