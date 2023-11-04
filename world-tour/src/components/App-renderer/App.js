@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const apiCall = async () => {
-      const results = await axios("https://restcountries.eu/rest/v2/all")
+      const results = await axios("https://restcountries.com/v2/all")
       updateRegions(results.data)
     }
     apiCall()
@@ -27,11 +27,12 @@ function App() {
   function totalArea(){
     let areaArray = regions.map(r => r.area)
     let sumAreas = areaArray.reduce((sum, curr) => {
-      return sum + curr
+      return curr ? sum + curr : sum
     }, 0)
+
     // converts from square kilometer to square miles
     let convertArea = (sumAreas * 0.386102).toFixed(2)
-    return convertArea
+    return parseFloat(convertArea)
   }
   
   function totalPopulation(){
@@ -53,9 +54,7 @@ function App() {
   }
 
   function listCountries() {
-    const countries = regions.map((r, id) => 
-      r.name
-    )
+    const countries = regions.map((r) => r.name)
     return countries
   }
 
